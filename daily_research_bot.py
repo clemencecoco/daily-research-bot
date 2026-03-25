@@ -43,9 +43,9 @@ def is_quality_video(title, channel):
 def get_channel_priority(channel):
     return 0 if channel in TRUSTED_CHANNELS else 1
 
-def search_youtube(keyword, max_results=5):
+def search_youtube(keyword, max_results=5, min_views=5000):
     yesterday = (datetime.utcnow() - timedelta(days=7)).strftime('%Y-%m-%dT%H:%M:%SZ')
-    url = "https://www.googleapis.com/youtube/v3/search"
+    search_url = "https://www.googleapis.com/youtube/v3/search"
     params = {
         "part": "snippet",
         "q": keyword,
@@ -54,20 +54,50 @@ def search_youtube(keyword, max_results=5):
         "publishedAfter": yesterday,
         "maxResults": max_results,
         "key": YOUTUBE_API_KEY,
-        "videoDuration": "medium"  # exclude shorts (<4min)
+        "videoDuration": "medium"
     }
-    r = requests.get(url, params=params)
+    r = requests.get(search_url, params=params)
     items = r.json().get("items", [])
+
+    # Collect video IDs
+    video_ids = [item["id"]["videoId"] for item in items]
+    if not video_ids:
+        return []
+
+    # Fetch view counts in one batch call
+    stats_url = "https://www.googleapis.com/youtube/v3/videos"
+    stats_params = {
+        "part": "statistics",
+        "id": ",".join(video_ids),
+        "key": YOUTUBE_API_KEY
+    }
+    stats_r = requests.get(stats_url, params=stats_params)
+    stats_map = {
+        v["id"]: int(v["statistics"].get("viewCount", 0))
+        for v in stats_r.json().get("items", [])
+    }
+
     results = []
     for item in items:
         title = item["snippet"]["title"]
         vid_id = item["id"]["videoId"]
         channel = item["snippet"]["channelTitle"]
-        if is_quality_video(title, channel):
-            results.append({
-                "text": f"- [{title}](https://youtube.com/watch?v={vid_id}) | _{channel}_",
-                "priority": get_channel_priority(channel)
-            })
+        views = stats_map.get(vid_id, 0)
+
+        if views < min_views:
+            continue
+        if not is_quality_video(title, channel):
+            continue
+
+        views_str = f"{views:,}"
+        results.append({
+            "text": f"- [{title}](https://youtube.com/watch?v={vid_id}) | _{channel}_ | 👁 {views_str}",
+            "priority": get_channel_priority(channel),
+            "views": views
+        })
+
+    # Sort by trusted channel first, then by views descending
+    results.sort(key=lambda x: (x["priority"], -x["views"]))
     return results
 
 def search_arxiv(keyword, max_results=4):
