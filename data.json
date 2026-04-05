@@ -1,0 +1,96 @@
+[
+  {
+    "date": "2026-04-05",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight **convergence across perception, control, and hardware** driving next-generation robotics.\n\nOn the **motion and control** front, advances in continuum robot inverse kinematics and safe feedback-interconnected control via singular perturbations address critical manipulation and stability challenges. NVIDIA's Kimodo signals a leap in **AI-driven animation**, with direct implications for realistic robot motion synthesis.\n\n**Perception infrastructure** is maturing rapidly, with ROS 2-based LiDAR frameworks leveraging synthetic data and transformation-equivariant 3D detection for dynamic environments. Humanoid demonstrations underscore growing embodied AI realism.\n\n**Edge inference efficiency** emerges as a priority, evidenced by softmax surrogates for integer-native hardware and the TensorPool processor, enabling on-robot AI at constrained power budgets.\n\nMemory management for autonomous agents rounds out a trend toward **cognitively capable, resource-efficient robotic systems**.",
+    "videos": [
+      {
+        "title": "This New AI Robot Is Basically HUMAN NOW… It’s TOO REAL!",
+        "url": "https://youtube.com/watch?v=jb8u7PzcgfE",
+        "channel": "NextGen Humanoids",
+        "views": 11484,
+        "priority": 1
+      },
+      {
+        "title": "AI Animation Just Got a Revolution — NVIDIA Kimodo",
+        "url": "https://youtube.com/watch?v=CVA4jGHAbnA",
+        "channel": "Stefan 3D AI Lab",
+        "views": 23555,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "A virtual-variable-length method for robust inverse kinematics of multi-segment continuum robots",
+        "url": "http://arxiv.org/abs/2604.02256v1",
+        "authors": [
+          "Weiting Feng",
+          "Federico Renda"
+        ],
+        "abstract": "This paper proposes a new, robust method to solve the inverse kinematics (IK) of multi-segment continuum manipulators. Conventional Jacobian-based solvers, especially when initialized from neutral/rest configurations, often exhibit slow convergence and, in certain conditions, may fail to converge (d"
+      },
+      {
+        "title": "Topology-First B-Rep Meshing",
+        "url": "http://arxiv.org/abs/2604.02141v1",
+        "authors": [
+          "YunFan Zhou",
+          "Daniel Zint"
+        ],
+        "abstract": "Parametric boundary representation models (B-Reps) are the de facto standard in CAD, graphics, and robotics, yet converting them into valid meshes remains fragile. The difficulty originates from the unavoidable approximation of high-order surface and curve intersections to low-order primitives: the "
+      },
+      {
+        "title": "Safe Control of Feedback-Interconnected Systems via Singular Perturbations",
+        "url": "http://arxiv.org/abs/2604.02132v1",
+        "authors": [
+          "Stefano Di Gregorio",
+          "Guido Carnevale"
+        ],
+        "abstract": "Control Barrier Functions (CBFs) have emerged as a powerful tool in the design of safety-critical controllers for nonlinear systems. In modern applications, complex systems often involve the feedback interconnection of subsystems evolving at different timescales, e.g., two parts from different physi"
+      },
+      {
+        "title": "ROS 2-Based LiDAR Perception Framework for Mobile Robots in Dynamic Production Environments, Utilizing Synthetic Data Generation, Transformation-Equivariant 3D Detection and Multi-Object Tracking",
+        "url": "http://arxiv.org/abs/2604.02109v1",
+        "authors": [
+          "Lukas Bergs",
+          "Tan Chung"
+        ],
+        "abstract": "Adaptive robots in dynamic production environments require robust perception capabilities, including 6D pose estimation and multi-object tracking. To address limitations in real-world data dependency, noise robustness, and spatiotemporal consistency, a LiDAR framework based on the Robot Operating Sy"
+      },
+      {
+        "title": "Taming the Exponential: A Fast Softmax Surrogate for Integer-Native Edge Inference",
+        "url": "http://arxiv.org/abs/2604.02292v1",
+        "authors": [
+          "Dimitrios Danopoulos",
+          "Enrico Lupi"
+        ],
+        "abstract": "Softmax can become a computational bottleneck in the Transformer model's Multi-Head Attention (MHA) block, particularly in small models under low-precision inference, where exponentiation and normalization incur significant overhead. As such, we suggest using Head-Calibrated Clipped-Linear Softmax ("
+      },
+      {
+        "title": "TensorPool: A 3D-Stacked 8.4TFLOPS/4.3W Many-Core Domain-Specific Processor for AI-Native Radio Access Networks",
+        "url": "http://arxiv.org/abs/2604.02291v1",
+        "authors": [
+          "Marco Bertuletti",
+          "Yichao Zhang"
+        ],
+        "abstract": "The upcoming integration of AI in the physical layer (PHY) of 6G radio access networks (RAN) will enable a higher quality of service in challenging transmission scenarios. However, deeply optimized AI-Native PHY models impose higher computational complexity compared to conventional baseband, challen"
+      },
+      {
+        "title": "Novel Memory Forgetting Techniques for Autonomous AI Agents: Balancing Relevance and Efficiency",
+        "url": "http://arxiv.org/abs/2604.02280v1",
+        "authors": [
+          "Payal Fofadiya",
+          "Sunil Tiwari"
+        ],
+        "abstract": "Long-horizon conversational agents require persistent memory for coherent reasoning, yet uncontrolled accumulation causes temporal decay and false memory propagation. Benchmarks such as LOCOMO and LOCCO report performance degradation from 0.455 to 0.05 across stages, while MultiWOZ shows 78.2% accur"
+      },
+      {
+        "title": "The Self Driving Portfolio: Agentic Architecture for Institutional Asset Management",
+        "url": "http://arxiv.org/abs/2604.02279v1",
+        "authors": [
+          "Andrew Ang",
+          "Nazym Azimbayev"
+        ],
+        "abstract": "Agentic AI shifts the investor's role from analytical execution to oversight. We present an agentic strategic asset allocation pipeline in which approximately 50 specialized agents produce capital market assumptions, construct portfolios using over 20 competing methods, and critique and vote on each"
+      }
+    ]
+  }
+]
