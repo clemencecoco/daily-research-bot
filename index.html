@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Research Digest</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0e1a;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+  }
+
+  header {
+    background: linear-gradient(135deg, #0f172a, #1e1b4b);
+    border-bottom: 1px solid #334155;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #818cf8, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  header p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 4px;
+  }
+
+  .robot-icon { font-size: 2rem; }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+
+  /* Date selector */
+  .date-bar {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+    scrollbar-width: thin;
+    scrollbar-color: #334155 transparent;
+  }
+
+  .date-btn {
+    flex-shrink: 0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: #94a3b8;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .date-btn:hover { border-color: #818cf8; color: #818cf8; }
+  .date-btn.active {
+    background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+    border-color: transparent;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* Summary card */
+  .summary-card {
+    background: linear-gradient(135deg, #1e1b4b22, #0c4a6e22);
+    border: 1px solid #334155;
+    border-left: 4px solid #818cf8;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+
+  .summary-card h2 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #818cf8;
+    margin-bottom: 12px;
+  }
+
+  .summary-card p {
+    line-height: 1.7;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+  }
+
+  /* Sections */
+  .sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .sections { grid-template-columns: 1fr; }
+    header { padding: 16px 20px; }
+    .container { padding: 20px 16px; }
+  }
+
+  .section h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section.videos h2 { color: #f59e0b; }
+  .section.papers h2 { color: #38bdf8; }
+
+  /* Cards */
+  .card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+  }
+
+  .card:hover {
+    border-color: #4f46e5;
+    background: #263548;
+    transform: translateY(-2px);
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .card-meta {
+    font-size: 0.78rem;
+    color: #64748b;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .card-meta span { display: flex; align-items: center; gap: 4px; }
+
+  .card-abstract {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    line-height: 1.5;
+    margin-top: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .views-badge {
+    background: #f59e0b22;
+    color: #f59e0b;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+  }
+
+  .loading {
+    text-align: center;
+    padding: 80px;
+    color: #475569;
+    font-size: 1rem;
+  }
+
+  .empty {
+    color: #475569;
+    font-size: 0.85rem;
+    padding: 20px 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="robot-icon">🤖</div>
+  <div>
+    <h1>Daily Research Digest</h1>
+    <p>Quadruped Robotics & Embodied AI — Auto-updated daily</p>
+  </div>
+</header>
+
+<div class="container">
+  <div id="app"><div class="loading">Loading research data...</div></div>
+</div>
+
+<script>
+const DATA_URL = 'data.json';
+
+async function loadData() {
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!r.ok) throw new Error('No data yet');
+    return await r.json();
+  } catch {
+    return null;
+  }
+}
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00Z');
+  return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' });
+}
+
+function formatViews(n) {
+  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+  return n;
+}
+
+function renderEntry(entry) {
+  const videos = (entry.videos || []).map(v => `
+    <a class="card" href="${v.url}" target="_blank" rel="noopener">
+      <div class="card-title">${v.title}</div>
+      <div class="card-meta">
+        <span>📺 ${v.channel}</span>
+        <span class="views-badge">👁 ${formatViews(v.views)}</span>
+      </div>
+    </a>
+  `).join('') || '<div class="empty">No videos found for this date.</div>';
+
+  const papers = (entry.papers || []).map(p => `
+    <a class="card" href="${p.url}" target="_blank" rel="noopener">
+      <div class="card-title">${p.title}</div>
+      <div class="card-meta">
+        <span>👤 ${p.authors.join(', ')}</span>
+      </div>
+      ${p.abstract ? `<div class="card-abstract">${p.abstract}</div>` : ''}
+    </a>
+  `).join('') || '<div class="empty">No papers found for this date.</div>';
+
+  return `
+    <div class="summary-card">
+      <h2>📊 AI Summary</h2>
+      <p>${entry.summary}</p>
+    </div>
+    <div class="sections">
+      <div class="section videos">
+        <h2>🎥 YouTube Videos</h2>
+        ${videos}
+      </div>
+      <div class="section papers">
+        <h2>📄 arXiv Papers</h2>
+        ${papers}
+      </div>
+    </div>
+  `;
+}
+
+async function init() {
+  const data = await loadData();
+  const app = document.getElementById('app');
+
+  if (!data || data.length === 0) {
+    app.innerHTML = '<div class="loading">No data yet. Run the bot to generate your first digest!</div>';
+    return;
+  }
+
+  let current = 0;
+
+  function render() {
+    const dateBtns = data.map((e, i) => `
+      <button class="date-btn ${i === current ? 'active' : ''}" onclick="selectDate(${i})">
+        ${formatDate(e.date)}
+      </button>
+    `).join('');
+
+    app.innerHTML = `
+      <div class="date-bar">${dateBtns}</div>
+      ${renderEntry(data[current])}
+    `;
+  }
+
+  window.selectDate = function(i) {
+    current = i;
+    render();
+  };
+
+  render();
+}
+
+init();
+</script>
+</body>
+</html>
