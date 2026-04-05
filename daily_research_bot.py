@@ -9,8 +9,8 @@ client = Anthropic(api_key=os.environ["CLAUDE_API_KEY"])
 TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 YOUTUBE_API_KEY = os.environ["YOUTUBE_API_KEY"]
-GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
-GITHUB_REPO = os.environ["GITHUB_REPO"]  # e.g. "clemencecoco/daily-research-bot"
+GITHUB_TOKEN = os.environ["MY_GITHUB_TOKEN"]
+GITHUB_REPO = os.environ["MY_GITHUB_REPO"]
 
 KEYWORDS = [
     "quadruped robot locomotion",
