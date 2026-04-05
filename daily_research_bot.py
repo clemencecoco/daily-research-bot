@@ -1,4 +1,5 @@
 import os
+import json
 import requests
 from anthropic import Anthropic
 from datetime import datetime, timedelta
@@ -8,6 +9,8 @@ client = Anthropic(api_key=os.environ["CLAUDE_API_KEY"])
 TELEGRAM_TOKEN = os.environ["TELEGRAM_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 YOUTUBE_API_KEY = os.environ["YOUTUBE_API_KEY"]
+GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
+GITHUB_REPO = os.environ["GITHUB_REPO"]  # e.g. "clemencecoco/daily-research-bot"
 
 KEYWORDS = [
     "quadruped robot locomotion",
@@ -16,7 +19,6 @@ KEYWORDS = [
     "robot reinforcement learning"
 ]
 
-# Trusted channels: research labs, universities, serious tech channels
 TRUSTED_CHANNELS = {
     "UCBerkeley", "StanfordUniversity", "MIT", "CMUrobotics",
     "DeepMind", "GoogleDeepMind", "OpenAI", "ANYbotics",
@@ -25,7 +27,6 @@ TRUSTED_CHANNELS = {
     "Two Minute Papers", "Yannic Kilcher", "Lex Fridman",
     "AIFoundry Org", "Stanford Vision and Learning Lab",
     "Carnegie Mellon University", "UC San Diego", "Oxford Robotics",
-    "Pieter Abbeel", "Chelsea Finn", "Sergey Levine",
     "Robot Learning", "Robotics Today", "The Robot Brains Podcast",
 }
 
@@ -33,11 +34,9 @@ BLOCKED_KEYWORDS = ["#short", "#shorts", "shorts", "🤯", "😱", "amazing", "p
 
 def is_quality_video(title, channel):
     title_lower = title.lower()
-    # Block shorts and clickbait
     for kw in BLOCKED_KEYWORDS:
         if kw.lower() in title_lower:
             return False
-    # Prefer trusted channels (soft filter — don't block unknowns entirely)
     return True
 
 def get_channel_priority(channel):
@@ -59,19 +58,15 @@ def search_youtube(keyword, max_results=5, min_views=5000):
     r = requests.get(search_url, params=params)
     items = r.json().get("items", [])
 
-    # Collect video IDs
     video_ids = [item["id"]["videoId"] for item in items]
     if not video_ids:
         return []
 
-    # Fetch view counts in one batch call
-    stats_url = "https://www.googleapis.com/youtube/v3/videos"
-    stats_params = {
+    stats_r = requests.get("https://www.googleapis.com/youtube/v3/videos", params={
         "part": "statistics",
         "id": ",".join(video_ids),
         "key": YOUTUBE_API_KEY
-    }
-    stats_r = requests.get(stats_url, params=stats_params)
+    })
     stats_map = {
         v["id"]: int(v["statistics"].get("viewCount", 0))
         for v in stats_r.json().get("items", [])
@@ -83,20 +78,16 @@ def search_youtube(keyword, max_results=5, min_views=5000):
         vid_id = item["id"]["videoId"]
         channel = item["snippet"]["channelTitle"]
         views = stats_map.get(vid_id, 0)
-
-        if views < min_views:
+        if views < min_views or not is_quality_video(title, channel):
             continue
-        if not is_quality_video(title, channel):
-            continue
-
-        views_str = f"{views:,}"
         results.append({
-            "text": f"- [{title}](https://youtube.com/watch?v={vid_id}) | _{channel}_ | 👁 {views_str}",
-            "priority": get_channel_priority(channel),
-            "views": views
+            "title": title,
+            "url": f"https://youtube.com/watch?v={vid_id}",
+            "channel": channel,
+            "views": views,
+            "priority": get_channel_priority(channel)
         })
 
-    # Sort by trusted channel first, then by views descending
     results.sort(key=lambda x: (x["priority"], -x["views"]))
     return results
 
@@ -112,18 +103,19 @@ def search_arxiv(keyword, max_results=4):
         title = entry.find(f"{ns}title").text.strip().replace("\n", " ")
         link = entry.find(f"{ns}id").text.strip()
         authors = [a.find(f"{ns}name").text for a in entry.findall(f"{ns}author")][:2]
-        author_str = ", ".join(authors)
-        papers.append(f"- [{title}]({link}) | {author_str}")
+        abstract = entry.find(f"{ns}summary").text.strip().replace("\n", " ")[:300]
+        papers.append({
+            "title": title,
+            "url": link,
+            "authors": authors,
+            "abstract": abstract
+        })
     return papers
 
 def summarize_with_claude(youtube_results, arxiv_results):
-    content = f"""
-YouTube videos:
-{chr(10).join(youtube_results)}
-
-arXiv papers:
-{chr(10).join(arxiv_results)}
-"""
+    yt_text = "\n".join([f"- {v['title']} | {v['channel']}" for v in youtube_results])
+    ax_text = "\n".join([f"- {p['title']} | {', '.join(p['authors'])}" for p in arxiv_results])
+    content = f"YouTube videos:\n{yt_text}\n\narXiv papers:\n{ax_text}"
     message = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=1000,
@@ -138,11 +130,68 @@ arXiv papers:
     )
     return message.content[0].text
 
-def send_telegram(message):
+def save_and_push_json(today, summary, youtube_results, arxiv_results):
+    # Read existing data.json from GitHub
+    api_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/data.json"
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+
+    r = requests.get(api_url, headers=headers)
+    if r.status_code == 200:
+        import base64
+        existing = json.loads(base64.b64decode(r.json()["content"]).decode())
+        sha = r.json()["sha"]
+    else:
+        existing = []
+        sha = None
+
+    # Add today's entry
+    entry = {
+        "date": today,
+        "summary": summary,
+        "videos": youtube_results[:6],
+        "papers": arxiv_results[:8]
+    }
+
+    # Remove duplicate date if exists
+    existing = [e for e in existing if e["date"] != today]
+    existing.insert(0, entry)
+    existing = existing[:60]  # keep last 60 days
+
+    import base64
+    new_content = base64.b64encode(json.dumps(existing, ensure_ascii=False, indent=2).encode()).decode()
+
+    payload = {
+        "message": f"Update research digest {today}",
+        "content": new_content
+    }
+    if sha:
+        payload["sha"] = sha
+
+    requests.put(api_url, headers=headers, json=payload)
+    print("data.json pushed to GitHub.")
+
+def send_telegram(today, summary, youtube_results, arxiv_results):
+    yt_lines = [f"- [{v['title']}]({v['url']}) | _{v['channel']}_ | 👁 {v['views']:,}" for v in youtube_results[:6]]
+    ax_lines = [f"- [{p['title']}]({p['url']}) | {', '.join(p['authors'])}" for p in arxiv_results[:8]]
+
+    msg = f"""🤖 *Daily Research Digest — {today}*
+
+📊 *Summary:*
+{summary}
+
+🎥 *Latest YouTube Videos:*
+{chr(10).join(yt_lines) if yt_lines else "No new videos found."}
+
+📄 *Latest arXiv Papers:*
+{chr(10).join(ax_lines) if ax_lines else "No new papers found."}
+"""
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     requests.post(url, json={
         "chat_id": TELEGRAM_CHAT_ID,
-        "text": message,
+        "text": msg,
         "parse_mode": "Markdown",
         "disable_web_page_preview": True
     })
@@ -156,32 +205,24 @@ def main():
         youtube_all += search_youtube(kw)
         arxiv_all += search_arxiv(kw)
 
-    # Sort: trusted channels first, then deduplicate
-    youtube_all.sort(key=lambda x: x["priority"])
+    # Deduplicate
     seen = set()
     youtube_deduped = []
     for v in youtube_all:
-        if v["text"] not in seen:
-            seen.add(v["text"])
-            youtube_deduped.append(v["text"])
-    youtube_deduped = youtube_deduped[:6]
+        if v["url"] not in seen:
+            seen.add(v["url"])
+            youtube_deduped.append(v)
 
-    arxiv_all = list(dict.fromkeys(arxiv_all))[:8]
+    seen = set()
+    arxiv_deduped = []
+    for p in arxiv_all:
+        if p["url"] not in seen:
+            seen.add(p["url"])
+            arxiv_deduped.append(p)
 
-    summary = summarize_with_claude(youtube_deduped, arxiv_all)
-
-    msg = f"""🤖 *Daily Research Digest — {today}*
-
-📊 *Summary:*
-{summary}
-
-🎥 *Latest YouTube Videos:*
-{chr(10).join(youtube_deduped) if youtube_deduped else "No new videos found."}
-
-📄 *Latest arXiv Papers:*
-{chr(10).join(arxiv_all) if arxiv_all else "No new papers found."}
-"""
-    send_telegram(msg)
+    summary = summarize_with_claude(youtube_deduped[:6], arxiv_deduped[:8])
+    save_and_push_json(today, summary, youtube_deduped[:6], arxiv_deduped[:8])
+    send_telegram(today, summary, youtube_deduped[:6], arxiv_deduped[:8])
     print("Done!")
 
 if __name__ == "__main__":
