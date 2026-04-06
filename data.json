@@ -1,5 +1,99 @@
 [
   {
+    "date": "2026-04-06",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances across locomotion, planning, and cooperative robotics. **Humanoid and quadruped robots** are achieving increasingly naturalistic movement, as demonstrated by AI-learned walking behaviors and next-generation humanoid platforms. **Hierarchical planning with latent world models** enables more efficient long-horizon decision-making, while the **SCRAT framework** draws inspiration from squirrel locomotion to propose structured memory and auditable control for agentic AI. **Safety-critical MPC** methods now enable two quadrupedal robots to cooperatively transport payloads with formal safety guarantees. **Multi-view video diffusion policies** offer richer 3D spatiotemporal representations for robotic manipulation. Collectively, these works reflect a convergence toward **biologically inspired control**, verifiable autonomy, and scalable multi-robot coordination as central themes driving the field forward.",
+    "videos": [
+      {
+        "title": "This New AI Robot Is Basically HUMAN NOW… It’s TOO REAL!",
+        "url": "https://youtube.com/watch?v=jb8u7PzcgfE",
+        "channel": "NextGen Humanoids",
+        "views": 13051,
+        "priority": 1
+      },
+      {
+        "title": "AI Learns to Walk, But Less Dumb",
+        "url": "https://youtube.com/watch?v=sWtVzp1SU74",
+        "channel": "Pezzza's Work",
+        "views": 19074,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "Hierarchical Planning with Latent World Models",
+        "url": "http://arxiv.org/abs/2604.03208v1",
+        "authors": [
+          "Wancong Zhang",
+          "Basile Terver"
+        ],
+        "abstract": "Model predictive control (MPC) with learned world models has emerged as a promising paradigm for embodied control, particularly for its ability to generalize zero-shot when deployed in new environments. However, learned world models often struggle with long-horizon control due to the accumulation of"
+      },
+      {
+        "title": "Coupled Control, Structured Memory, and Verifiable Action in Agentic AI (SCRAT -- Stochastic Control with Retrieval and Auditable Trajectories): A Comparative Perspective from Squirrel Locomotion and Scatter-Hoarding",
+        "url": "http://arxiv.org/abs/2604.03201v1",
+        "authors": [
+          "Maximiliano Armesto",
+          "Christophe Kolb"
+        ],
+        "abstract": "Agentic AI is increasingly judged not by fluent output alone but by whether it can act, remember, and verify under partial observability, delay, and strategic observation. Existing research often studies these demands separately: robotics emphasizes control, retrieval systems emphasize memory, and a"
+      },
+      {
+        "title": "Safety-Critical Centralized Nonlinear MPC for Cooperative Payload Transportation by Two Quadrupedal Robots",
+        "url": "http://arxiv.org/abs/2604.03200v1",
+        "authors": [
+          "Ruturaj S. Sambhus",
+          "Yicheng Zeng"
+        ],
+        "abstract": "This paper presents a safety-critical centralized nonlinear model predictive control (NMPC) framework for cooperative payload transportation by two quadrupedal robots. The interconnected robot-payload system is modeled as a discrete-time nonlinear differential-algebraic system, capturing the coupled"
+      },
+      {
+        "title": "Multi-View Video Diffusion Policy: A 3D Spatio-Temporal-Aware Video Action Model",
+        "url": "http://arxiv.org/abs/2604.03181v1",
+        "authors": [
+          "Peiyan Li",
+          "Yixiang Chen"
+        ],
+        "abstract": "Robotic manipulation requires understanding both the 3D spatial structure of the environment and its temporal evolution, yet most existing policies overlook one or both. They typically rely on 2D visual observations and backbones pretrained on static image--text pairs, resulting in high data require"
+      },
+      {
+        "title": "PR3DICTR: A modular AI framework for medical 3D image-based detection and outcome prediction",
+        "url": "http://arxiv.org/abs/2604.03203v1",
+        "authors": [
+          "Daniel C. MacRae",
+          "Luuk van der Hoek"
+        ],
+        "abstract": "Three-dimensional medical image data and computer-aided decision making, particularly using deep learning, are becoming increasingly important in the medical field. To aid in these developments we introduce PR3DICTR: Platform for Research in 3D Image Classification and sTandardised tRaining. Built u"
+      },
+      {
+        "title": "A scalable infrastructure for strontium optical clocks with integrated photonics",
+        "url": "http://arxiv.org/abs/2604.03229v1",
+        "authors": [
+          "Zheng Luo",
+          "Travis C. Briles"
+        ],
+        "abstract": "Optical atomic clocks provide exceptionally accurate and precise signals for timekeeping and precision measurements, but they require high-power, free-space laser configurations that limit scalability. We introduce and explore a scalable infrastructure for strontium (Sr) optical-lattice clocks that "
+      },
+      {
+        "title": "Neuromorphic Realization of Best Response in Finite-Action Games",
+        "url": "http://arxiv.org/abs/2604.03222v1",
+        "authors": [
+          "Himani Sinhmar",
+          "Vaibhav Srivastava"
+        ],
+        "abstract": "We develop a mechanistic dynamical-systems formulation of best response in finite-action games with relational structure on the action set. The proposed neuromorphic decision dynamics realize bestresponse as the stable outcome of an internal state-space process, rather than as an externally imposed "
+      },
+      {
+        "title": "Unmixing the Crowd: Learning Mixture-to-Set Speaker Embeddings for Enrollment-Free Target Speech Extraction",
+        "url": "http://arxiv.org/abs/2604.03219v1",
+        "authors": [
+          "FNU Sidharth",
+          "Meysam Asgari"
+        ],
+        "abstract": "Personalized or target speech extraction (TSE) typically needs a clean enrollment -- hard to obtain in real-world crowded environments. We remove the essential need for enrollment by predicting, from the mixture itself, a small set of per-speaker embeddings that serve as the control signal for extra"
+      }
+    ]
+  },
+  {
     "date": "2026-04-05",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight **convergence across perception, control, and hardware** driving next-generation robotics.\n\nOn the **motion and control** front, advances in continuum robot inverse kinematics and safe feedback-interconnected control via singular perturbations address critical manipulation and stability challenges. NVIDIA's Kimodo signals a leap in **AI-driven animation**, with direct implications for realistic robot motion synthesis.\n\n**Perception infrastructure** is maturing rapidly, with ROS 2-based LiDAR frameworks leveraging synthetic data and transformation-equivariant 3D detection for dynamic environments. Humanoid demonstrations underscore growing embodied AI realism.\n\n**Edge inference efficiency** emerges as a priority, evidenced by softmax surrogates for integer-native hardware and the TensorPool processor, enabling on-robot AI at constrained power budgets.\n\nMemory management for autonomous agents rounds out a trend toward **cognitively capable, resource-efficient robotic systems**.",
     "videos": [
