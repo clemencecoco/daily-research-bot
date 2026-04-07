@@ -1,5 +1,106 @@
 [
   {
+    "date": "2026-04-07",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances across perception, learning, and multi-agent coordination. **Event-based sensing** emerges as a major theme, with E-VLA enabling robust vision-language-action models in dark/blurred environments, and biologically inspired event cameras achieving high-speed table tennis robotics with sample-efficient learning. **Natural language interfaces for robotics** advance through AnyUser, translating sketched user intent into domestic robot actions, while ROSClaw introduces hierarchical semantic-physical frameworks for heterogeneous multi-agent collaboration. On the learning side, reinforcement-based locomotion improvements (demonstrated accessibly via \"AI Learns to Walk\") reflect broader momentum in legged robot control. Humanoid demonstrations continue generating public attention. Notably, Acemoglu's work raises important questions about **AI knowledge aggregation risks**, providing a timely counterbalance to accelerating deployment trends.",
+    "videos": [
+      {
+        "title": "This New AI Robot Is Basically HUMAN NOW… It’s TOO REAL!",
+        "url": "https://youtube.com/watch?v=jb8u7PzcgfE",
+        "channel": "NextGen Humanoids",
+        "views": 14363,
+        "priority": 1
+      },
+      {
+        "title": "Scott Jennings STUNS CNN Panel with His Reaction to Tragedy",
+        "url": "https://youtube.com/watch?v=XZS9OJR8-fU",
+        "channel": "Rebel HQ",
+        "views": 17321,
+        "priority": 1
+      },
+      {
+        "title": "AI Learns to Walk, But Less Dumb",
+        "url": "https://youtube.com/watch?v=sWtVzp1SU74",
+        "channel": "Pezzza's Work",
+        "views": 36112,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "E-VLA: Event-Augmented Vision-Language-Action Model for Dark and Blurred Scenes",
+        "url": "http://arxiv.org/abs/2604.04834v1",
+        "authors": [
+          "Jiajun Zhai",
+          "Hao Shi"
+        ],
+        "abstract": "Robotic Vision-Language-Action (VLA) models generalize well for open-ended manipulation, but their perception is fragile under sensing-stage degradations such as extreme low light, motion blur, and black clipping. We present E-VLA, an event-augmented VLA framework that improves manipulation robustne"
+      },
+      {
+        "title": "AnyUser: Translating Sketched User Intent into Domestic Robots",
+        "url": "http://arxiv.org/abs/2604.04811v1",
+        "authors": [
+          "Songyuan Yang",
+          "Huibin Tan"
+        ],
+        "abstract": "We introduce AnyUser, a unified robotic instruction system for intuitive domestic task instruction via free-form sketches on camera images, optionally with language. AnyUser interprets multimodal inputs (sketch, vision, language) as spatial-semantic primitives to generate executable robot actions re"
+      },
+      {
+        "title": "ROSClaw: A Hierarchical Semantic-Physical Framework for Heterogeneous Multi-Agent Collaboration",
+        "url": "http://arxiv.org/abs/2604.04664v1",
+        "authors": [
+          "Rongfeng Zhao",
+          "Xuanhao Zhang"
+        ],
+        "abstract": "The integration of large language models (LLMs) with embodied agents has improved high-level reasoning capabilities; however, a critical gap remains between semantic understanding and physical execution. While vision-language-action (VLA) and vision-language-navigation (VLN) systems enable robots to"
+      },
+      {
+        "title": "Biologically Inspired Event-Based Perception and Sample-Efficient Learning for High-Speed Table Tennis Robots",
+        "url": "http://arxiv.org/abs/2604.04618v1",
+        "authors": [
+          "Ziqi Wang",
+          "Jingyue Zhao"
+        ],
+        "abstract": "Perception and decision-making in high-speed dynamic scenarios remain challenging for current robots. In contrast, humans and animals can rapidly perceive and make decisions in such environments. Taking table tennis as a typical example, conventional frame-based vision sensors suffer from motion blu"
+      },
+      {
+        "title": "How AI Aggregation Affects Knowledge",
+        "url": "http://arxiv.org/abs/2604.04906v1",
+        "authors": [
+          "Daron Acemoglu",
+          "Tianyi Lin"
+        ],
+        "abstract": "Artificial intelligence (AI) changes social learning when aggregated outputs become training data for future predictions. To study this, we extend the DeGroot model by introducing an AI aggregator that trains on population beliefs and feeds synthesized signals back to agents. We define the learning "
+      },
+      {
+        "title": "ClickAIXR: On-Device Multimodal Vision-Language Interaction with Real-World Objects in Extended Reality",
+        "url": "http://arxiv.org/abs/2604.04905v1",
+        "authors": [
+          "Dawar Khan",
+          "Alexandre Kouyoumdjian"
+        ],
+        "abstract": "We present ClickAIXR, a novel on-device framework for multimodal vision-language interaction with objects in extended reality (XR). Unlike prior systems that rely on cloud-based AI (e.g., ChatGPT) or gaze-based selection (e.g., GazePointAR), ClickAIXR integrates an on-device vision-language model (V"
+      },
+      {
+        "title": "FileGram: Grounding Agent Personalization in File-System Behavioral Traces",
+        "url": "http://arxiv.org/abs/2604.04901v1",
+        "authors": [
+          "Shuai Liu",
+          "Shulin Tian"
+        ],
+        "abstract": "Coworking AI agents operating within local file systems are rapidly emerging as a paradigm in human-AI interaction; however, effective personalization remains limited by severe data constraints, as strict privacy barriers and the difficulty of jointly collecting multimodal real-world traces prevent "
+      },
+      {
+        "title": "QED-Nano: Teaching a Tiny Model to Prove Hard Theorems",
+        "url": "http://arxiv.org/abs/2604.04898v1",
+        "authors": [
+          " LM-Provers",
+          "Yuxiao Qu"
+        ],
+        "abstract": "Proprietary AI systems have recently demonstrated impressive capabilities on complex proof-based problems, with gold-level performance reported at the 2025 International Mathematical Olympiad (IMO). However, the training pipelines behind these systems remain largely undisclosed, and their reliance o"
+      }
+    ]
+  },
+  {
     "date": "2026-04-06",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances across locomotion, planning, and cooperative robotics. **Humanoid and quadruped robots** are achieving increasingly naturalistic movement, as demonstrated by AI-learned walking behaviors and next-generation humanoid platforms. **Hierarchical planning with latent world models** enables more efficient long-horizon decision-making, while the **SCRAT framework** draws inspiration from squirrel locomotion to propose structured memory and auditable control for agentic AI. **Safety-critical MPC** methods now enable two quadrupedal robots to cooperatively transport payloads with formal safety guarantees. **Multi-view video diffusion policies** offer richer 3D spatiotemporal representations for robotic manipulation. Collectively, these works reflect a convergence toward **biologically inspired control**, verifiable autonomy, and scalable multi-robot coordination as central themes driving the field forward.",
     "videos": [
