@@ -1,5 +1,106 @@
 [
   {
+    "date": "2026-04-08",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances in robot learning and physical intelligence. **End-to-end policy learning** is gaining momentum, with \"Action Images\" demonstrating multiview video generation for scalable robot training. Complementary hardware innovations like **Delta6's low-cost 6-DOF force-sensing end-effector** and **learning-guided force-feedback MPC** for deburring show practical embodied AI deployment progressing rapidly.\n\nOn the locomotion front, reinforcement learning approaches are producing more **robust and efficient gaits** (as seen in Pezzza's Work), while physical robots like GEN 1 are achieving remarkable speed and endurance benchmarks. Multimodal reasoning models (**MMEmb-R1**) and diffusion-based perception (**DiffHDR**) further strengthen robot perception pipelines, collectively suggesting a trend toward **tightly integrated sensing, learning, and control** in next-generation robotic systems.",
+    "videos": [
+      {
+        "title": "New GEN 1 AI Robot Hits 3X Faster At 1,800+ Reps (AI NEWS)",
+        "url": "https://youtube.com/watch?v=IgwL5-IH6gU",
+        "channel": "AI News",
+        "views": 5244,
+        "priority": 1
+      },
+      {
+        "title": "Scott Jennings STUNS CNN Panel with His Reaction to Tragedy",
+        "url": "https://youtube.com/watch?v=XZS9OJR8-fU",
+        "channel": "Rebel HQ",
+        "views": 28467,
+        "priority": 1
+      },
+      {
+        "title": "AI Learns to Walk, But Less Dumb",
+        "url": "https://youtube.com/watch?v=sWtVzp1SU74",
+        "channel": "Pezzza's Work",
+        "views": 48491,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "Action Images: End-to-End Policy Learning via Multiview Video Generation",
+        "url": "http://arxiv.org/abs/2604.06168v1",
+        "authors": [
+          "Haoyu Zhen",
+          "Zixian Gao"
+        ],
+        "abstract": "World action models (WAMs) have emerged as a promising direction for robot policy learning, as they can leverage powerful video backbones to model the future states. However, existing approaches often rely on separate action modules, or use action representations that are not pixel-grounded, making "
+      },
+      {
+        "title": "Delta6: A Low-Cost, 6-DOF Force-Sensing Flexible End-Effector",
+        "url": "http://arxiv.org/abs/2604.06150v1",
+        "authors": [
+          "Yue Feng",
+          "Weicheng Huang"
+        ],
+        "abstract": "This paper presents Delta6, a low-cost, six-degree-of-freedom (6-DOF) force/torque end-effector that combines antagonistic springs with magnetic encoders to deliver accurate wrench sensing while remaining as simple to assemble as flat-pack furniture. A fully 3D-printed prototype, assembled entirely "
+      },
+      {
+        "title": "Learning-Guided Force-Feedback Model Predictive Control with Obstacle Avoidance for Robotic Deburring",
+        "url": "http://arxiv.org/abs/2604.06133v1",
+        "authors": [
+          "Krzysztof Wojciechowski",
+          "Ege Gursoy"
+        ],
+        "abstract": "Model Predictive Control (MPC) is widely used for torque-controlled robots, but classical formulations often neglect real-time force feedback and struggle with contact-rich industrial tasks under collision constraints. Deburring in particular requires precise tool insertion, stable force regulation,"
+      },
+      {
+        "title": "UI Placement as a Critical Design Factor for Augmented Reality During Locomotion",
+        "url": "http://arxiv.org/abs/2604.06102v1",
+        "authors": [
+          "Pavel Manakhov",
+          "Hans Gellersen"
+        ],
+        "abstract": "Wearable augmented reality (AR) represents the next interface to all things computing, extending what smartphones and laptops can do. This involves providing access to digital information during activities like walking or jogging. In this work we argue that the impact of physical movement on AR inte"
+      },
+      {
+        "title": "Who Governs the Machine? A Machine Identity Governance Taxonomy (MIGT) for AI Systems Operating Across Enterprise and Geopolitical Boundaries",
+        "url": "http://arxiv.org/abs/2604.06148v1",
+        "authors": [
+          "Andrew Kurtz",
+          "Klaudia Krawiecka"
+        ],
+        "abstract": "The governance of artificial intelligence has a blind spot: the machine identities that AI systems use to act. AI agents, service accounts, API tokens, and automated workflows now outnumber human identities in enterprise environments by ratios exceeding 80 to 1, yet no integrated framework exists to"
+      },
+      {
+        "title": "DiffHDR: Re-Exposing LDR Videos with Video Diffusion Models",
+        "url": "http://arxiv.org/abs/2604.06161v1",
+        "authors": [
+          "Zhengming Yu",
+          "Li Ma"
+        ],
+        "abstract": "Most digital videos are stored in 8-bit low dynamic range (LDR) formats, where much of the original high dynamic range (HDR) scene radiance is lost due to saturation and quantization. This loss of highlight and shadow detail precludes mapping accurate luminance to HDR displays and limits meaningful "
+      },
+      {
+        "title": "Distributionally Robust Regret Optimal LQR with Common Stage-Law Ambiguity",
+        "url": "http://arxiv.org/abs/2604.06158v1",
+        "authors": [
+          "Lukas-Benedikt Fiechtner",
+          "Jose Blanchet"
+        ],
+        "abstract": "We study, to our knowledge, the first tractable multistage ex-ante distributionally robust regret optimization (DRRO) formulation for stochastic control. We consider finite-horizon LQR under common stage-law ambiguity: disturbances are independent across time but share an unknown stage law whose mea"
+      },
+      {
+        "title": "MMEmb-R1: Reasoning-Enhanced Multimodal Embedding with Pair-Aware Selection and Adaptive Control",
+        "url": "http://arxiv.org/abs/2604.06156v1",
+        "authors": [
+          "Yuchi Wang",
+          "Haiyang Yu"
+        ],
+        "abstract": "MLLMs have been successfully applied to multimodal embedding tasks, yet their generative reasoning capabilities remain underutilized. Directly incorporating chain-of-thought reasoning into embedding learning introduces two fundamental challenges. First, structural misalignment between instance-level"
+      }
+    ]
+  },
+  {
     "date": "2026-04-07",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances across perception, learning, and multi-agent coordination. **Event-based sensing** emerges as a major theme, with E-VLA enabling robust vision-language-action models in dark/blurred environments, and biologically inspired event cameras achieving high-speed table tennis robotics with sample-efficient learning. **Natural language interfaces for robotics** advance through AnyUser, translating sketched user intent into domestic robot actions, while ROSClaw introduces hierarchical semantic-physical frameworks for heterogeneous multi-agent collaboration. On the learning side, reinforcement-based locomotion improvements (demonstrated accessibly via \"AI Learns to Walk\") reflect broader momentum in legged robot control. Humanoid demonstrations continue generating public attention. Notably, Acemoglu's work raises important questions about **AI knowledge aggregation risks**, providing a timely counterbalance to accelerating deployment trends.",
     "videos": [
