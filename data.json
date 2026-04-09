@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026-04-09",
+    "summary": "# Research Trends in Quadruped Robotics & Embodied AI\n\nRecent work highlights significant advances in robot learning and physical AI systems. **MoRight** introduces improved motion control frameworks, while **TAMEn** addresses closed-loop manipulation in contact-rich tasks using tactile feedback—critical for dexterous robot hands. **RoSHI** presents a wearable suit capturing human motion data in-the-wild, enabling better robot imitation learning. The YouTube content \"AI Learns to Walk, But Less Dumb\" reflects growing interest in more sample-efficient locomotion policies, complementing the **GEN 1 AI Robot** achieving 3× faster repetition speeds. Collectively, these trends emphasize **sensor-rich data collection**, **human-to-robot knowledge transfer**, and **closed-loop control** as dominant themes, pushing embodied AI systems toward more robust real-world deployment with reduced trial-and-error training overhead.",
+    "videos": [
+      {
+        "title": "New GEN 1 AI Robot Hits 3X Faster At 1,800+ Reps (AI NEWS)",
+        "url": "https://youtube.com/watch?v=IgwL5-IH6gU",
+        "channel": "AI News",
+        "views": 5400,
+        "priority": 1
+      },
+      {
+        "title": "I Was Forced to STOP Running…",
+        "url": "https://youtube.com/watch?v=keBjwbFGYRA",
+        "channel": "Ran To Japan",
+        "views": 94335,
+        "priority": 1
+      },
+      {
+        "title": "Scott Jennings STUNS CNN Panel with His Reaction to Tragedy",
+        "url": "https://youtube.com/watch?v=XZS9OJR8-fU",
+        "channel": "Rebel HQ",
+        "views": 30935,
+        "priority": 1
+      },
+      {
+        "title": "AI Learns to Walk, But Less Dumb",
+        "url": "https://youtube.com/watch?v=sWtVzp1SU74",
+        "channel": "Pezzza's Work",
+        "views": 53713,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "TAMEn: Tactile-Aware Manipulation Engine for Closed-Loop Data Collection in Contact-Rich Tasks",
+        "url": "http://arxiv.org/abs/2604.07335v1",
+        "authors": [
+          "Longyan Wu",
+          "Jieji Ren"
+        ],
+        "abstract": "Handheld paradigms offer an efficient and intuitive way for collecting large-scale demonstration of robot manipulation. However, achieving contact-rich bimanual manipulation through these methods remains a pivotal challenge, which is substantially hindered by hardware adaptability and data efficacy."
+      },
+      {
+        "title": "RoSHI: A Versatile Robot-oriented Suit for Human Data In-the-Wild",
+        "url": "http://arxiv.org/abs/2604.07331v1",
+        "authors": [
+          "Wenjing Margaret Mao",
+          "Jefferson Ng"
+        ],
+        "abstract": "Scaling up robot learning will likely require human data containing rich and long-horizon interactions in the wild. Existing approaches for collecting such data trade off portability, robustness to occlusion, and global consistency. We introduce RoSHI, a hybrid wearable that fuses low-cost sparse IM"
+      },
+      {
+        "title": "Robots that learn to evaluate models of collective behavior",
+        "url": "http://arxiv.org/abs/2604.07303v1",
+        "authors": [
+          "Mathis Hocke",
+          "Andreas Gerken"
+        ],
+        "abstract": "Understanding and modeling animal behavior is essential for studying collective motion, decision-making, and bio-inspired robotics. Yet, evaluating the accuracy of behavioral models still often relies on offline comparisons to static trajectory statistics. Here we introduce a reinforcement-learning-"
+      },
+      {
+        "title": "Mem3R: Streaming 3D Reconstruction with Hybrid Memory via Test-Time Training",
+        "url": "http://arxiv.org/abs/2604.07279v1",
+        "authors": [
+          "Changkun Liu",
+          "Jiezhi Yang"
+        ],
+        "abstract": "Streaming 3D perception is well suited to robotics and augmented reality, where long visual streams must be processed efficiently and consistently. Recent recurrent models offer a promising solution by maintaining fixed-size states and enabling linear-time inference, but they often suffer from drift"
+      },
+      {
+        "title": "Measurement of Generative AI Workload Power Profiles for Whole-Facility Data Center Infrastructure Planning",
+        "url": "http://arxiv.org/abs/2604.07345v1",
+        "authors": [
+          "Roberto Vercellino",
+          "Jared Willard"
+        ],
+        "abstract": "The rapid growth of generative artificial intelligence (AI) has introduced unprecedented computational demands, driving significant increases in the energy footprint of data centers. However, existing power consumption data is largely proprietary and reported at varying resolutions, creating challen"
+      },
+      {
+        "title": "NIRVANA: A Comprehensive Dataset for Reproducing How Students Use Generative AI for Essay Writing",
+        "url": "http://arxiv.org/abs/2604.07344v1",
+        "authors": [
+          "Andrew Jelson",
+          "Daniel Manesh"
+        ],
+        "abstract": "With the rapid adoption of AI writing assistants in education, educators and researchers need empirical evidence to understand the impact on student writing and inform effective pedagogical design. Despite widespread use, we lack systematic understanding of how students engage with these tools durin"
+      },
+      {
+        "title": "MoRight: Motion Control Done Right",
+        "url": "http://arxiv.org/abs/2604.07348v1",
+        "authors": [
+          "Shaowei Liu",
+          "Xuanchi Ren"
+        ],
+        "abstract": "Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the object motion and adjust camera viewpoint; and (2) motion ca"
+      },
+      {
+        "title": "Dual-Envelope Constrained Nonlinear MPC for Distributed Drive Electric Vehicles Drifting Under Bounded Steering and Direct Yaw-Moment Control",
+        "url": "http://arxiv.org/abs/2604.07342v1",
+        "authors": [
+          "Yurun Gan",
+          "Ziyu Song"
+        ],
+        "abstract": "Distributed drive electric vehicles offer superior yaw moment control for autonomous drifting in extreme maneuvers. Conventional drift analysis constructs stability boundaries from open loop equilibria points and assumes a fixed envelope structure. However, coupling among control inputs reshapes the"
+      }
+    ]
+  },
+  {
     "date": "2026-04-08",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances in robot learning and physical intelligence. **End-to-end policy learning** is gaining momentum, with \"Action Images\" demonstrating multiview video generation for scalable robot training. Complementary hardware innovations like **Delta6's low-cost 6-DOF force-sensing end-effector** and **learning-guided force-feedback MPC** for deburring show practical embodied AI deployment progressing rapidly.\n\nOn the locomotion front, reinforcement learning approaches are producing more **robust and efficient gaits** (as seen in Pezzza's Work), while physical robots like GEN 1 are achieving remarkable speed and endurance benchmarks. Multimodal reasoning models (**MMEmb-R1**) and diffusion-based perception (**DiffHDR**) further strengthen robot perception pipelines, collectively suggesting a trend toward **tightly integrated sensing, learning, and control** in next-generation robotic systems.",
     "videos": [
