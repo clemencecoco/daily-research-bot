@@ -1,5 +1,127 @@
 [
   {
+    "date": "2026-04-11",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances in **robot learning and physical intelligence**. The *Sumo* framework demonstrates dynamic whole-body loco-manipulation, enabling quadrupeds to perform complex tasks combining locomotion and manipulation. Complementing this, *A-SLIP* introduces acoustic sensing for real-time in-hand slip detection, improving dexterous manipulation reliability. *ActiveGlasses* leverages ego-centric human demonstrations for manipulation learning, advancing imitation-based approaches.\n\nOn the simulation side, *SIM1* offers physics-aligned zero-shot data scaling for deformable environments, addressing sim-to-real gaps. The YouTube video \"AI Learns to Walk, But Less Dumb\" reflects growing public interest in locomotion learning. Meanwhile, humanoid developments—including Disney's character robots and e-skin-equipped platforms—signal expanding embodied AI applications beyond traditional quadruped research.",
+    "videos": [
+      {
+        "title": "I Was Forced to STOP Running…",
+        "url": "https://youtube.com/watch?v=keBjwbFGYRA",
+        "channel": "Ran To Japan",
+        "views": 98538,
+        "priority": 1
+      },
+      {
+        "title": "Scott Jennings STUNS CNN Panel with His Reaction to Tragedy",
+        "url": "https://youtube.com/watch?v=XZS9OJR8-fU",
+        "channel": "Rebel HQ",
+        "views": 31898,
+        "priority": 1
+      },
+      {
+        "title": "How To Skate Backwards &amp; Avoid Mistakes (Full Tutorial)",
+        "url": "https://youtube.com/watch?v=ZwwyWGxYEwA",
+        "channel": "Secret Sauce Hockey",
+        "views": 6547,
+        "priority": 1
+      },
+      {
+        "title": "AI Learns to Walk, But Less Dumb",
+        "url": "https://youtube.com/watch?v=sWtVzp1SU74",
+        "channel": "Pezzza's Work",
+        "views": 58157,
+        "priority": 1
+      },
+      {
+        "title": "Disney&#39;s New Olaf Robot Isn&#39;t What You Think",
+        "url": "https://youtube.com/watch?v=VvXhpnvjVGE",
+        "channel": "Guide2WDW",
+        "views": 15133,
+        "priority": 1
+      },
+      {
+        "title": "New GEN 3 Humanoid Robot Full Body E-SKIN Does This (AI NEWS)",
+        "url": "https://youtube.com/watch?v=e73vuV2JDOg",
+        "channel": "AI News",
+        "views": 11301,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "SIM1: Physics-Aligned Simulator as Zero-Shot Data Scaler in Deformable Worlds",
+        "url": "http://arxiv.org/abs/2604.08544v1",
+        "authors": [
+          "Yunsong Zhou",
+          "Hangxu Liu"
+        ],
+        "abstract": "Robotic manipulation with deformable objects represents a data-intensive regime in embodied learning, where shape, contact, and topology co-evolve in ways that far exceed the variability of rigids. Although simulation promises relief from the cost of real-world data acquisition, prevailing sim-to-re"
+      },
+      {
+        "title": "ActiveGlasses: Learning Manipulation with Active Vision from Ego-centric Human Demonstration",
+        "url": "http://arxiv.org/abs/2604.08534v1",
+        "authors": [
+          "Yanwen Zou",
+          "Chenyang Shi"
+        ],
+        "abstract": "Large-scale real-world robot data collection is a prerequisite for bringing robots into everyday deployment. However, existing pipelines often rely on specialized handheld devices to bridge the embodiment gap, which not only increases operator burden and limits scalability, but also makes it difficu"
+      },
+      {
+        "title": "A-SLIP: Acoustic Sensing for Continuous In-hand Slip Estimation",
+        "url": "http://arxiv.org/abs/2604.08528v1",
+        "authors": [
+          "Uksang Yoo",
+          "Yuemin Mao"
+        ],
+        "abstract": "Reliable in-hand manipulation requires accurate real-time estimation of slip between a gripper and a grasped object. Existing tactile sensing approaches based on vision, capacitance, or force-torque measurements face fundamental trade-offs in form factor, durability, and their ability to jointly est"
+      },
+      {
+        "title": "Sumo: Dynamic and Generalizable Whole-Body Loco-Manipulation",
+        "url": "http://arxiv.org/abs/2604.08508v1",
+        "authors": [
+          "John Z. Zhang",
+          "Maks Sorokin"
+        ],
+        "abstract": "This paper presents a sim-to-real approach that enables legged robots to dynamically manipulate large and heavy objects with whole-body dexterity. Our key insight is that by performing test-time steering of a pre-trained whole-body control policy with a sample-based planner, we can enable these robo"
+      },
+      {
+        "title": "ParseBench: A Document Parsing Benchmark for AI Agents",
+        "url": "http://arxiv.org/abs/2604.08538v1",
+        "authors": [
+          "Boyang Zhang",
+          "Sebastián G. Acosta"
+        ],
+        "abstract": "AI agents are changing the requirements for document parsing. What matters is \\emph{semantic correctness}: parsed output must preserve the structure and meaning needed for autonomous decisions, including correct table structure, precise chart data, semantically meaningful formatting, and visual grou"
+      },
+      {
+        "title": "PSI: Shared State as the Missing Layer for Coherent AI-Generated Instruments in Personal AI Agents",
+        "url": "http://arxiv.org/abs/2604.08529v1",
+        "authors": [
+          "Zhiyuan Wang",
+          "Erzhen Hu"
+        ],
+        "abstract": "Personal AI tools can now be generated from natural-language requests, but they often remain isolated after creation. We present PSI, a shared-state architecture that turns independently generated modules into coherent instruments: persistent, connected, and chat-complementary artifacts accessible t"
+      },
+      {
+        "title": "GaussiAnimate: Reconstruct and Rig Animatable Categories with Level of Dynamics",
+        "url": "http://arxiv.org/abs/2604.08547v1",
+        "authors": [
+          "Jiaxin Wang",
+          "Dongxin Lyu"
+        ],
+        "abstract": "Free-form bones, that conform closely to the surface, can effectively capture non-rigid deformations, but lack a kinematic structure necessary for intuitive control. Thus, we propose a Scaffold-Skin Rigging System, termed \"Skelebones\", with three key steps: (1) Bones: compress temporally-consistent "
+      },
+      {
+        "title": "AVGen-Bench: A Task-Driven Benchmark for Multi-Granular Evaluation of Text-to-Audio-Video Generation",
+        "url": "http://arxiv.org/abs/2604.08540v1",
+        "authors": [
+          "Ziwei Zhou",
+          "Zeyuan Lai"
+        ],
+        "abstract": "Text-to-Audio-Video (T2AV) generation is rapidly becoming a core interface for media creation, yet its evaluation remains fragmented. Existing benchmarks largely assess audio and video in isolation or rely on coarse embedding similarity, failing to capture the fine-grained joint correctness required"
+      }
+    ]
+  },
+  {
     "date": "2026-04-09",
     "summary": "# Research Trends in Quadruped Robotics & Embodied AI\n\nRecent work highlights significant advances in robot learning and physical AI systems. **MoRight** introduces improved motion control frameworks, while **TAMEn** addresses closed-loop manipulation in contact-rich tasks using tactile feedback—critical for dexterous robot hands. **RoSHI** presents a wearable suit capturing human motion data in-the-wild, enabling better robot imitation learning. The YouTube content \"AI Learns to Walk, But Less Dumb\" reflects growing interest in more sample-efficient locomotion policies, complementing the **GEN 1 AI Robot** achieving 3× faster repetition speeds. Collectively, these trends emphasize **sensor-rich data collection**, **human-to-robot knowledge transfer**, and **closed-loop control** as dominant themes, pushing embodied AI systems toward more robust real-world deployment with reduced trial-and-error training overhead.",
     "videos": [
