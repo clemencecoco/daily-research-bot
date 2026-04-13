@@ -1,5 +1,106 @@
 [
   {
+    "date": "2026-04-13",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight significant advances across hardware and learning-based control. The **Clone humanoid robot's 206-bone skeleton** and Disney's expressive Olaf robot demonstrate growing sophistication in biomimetic and character-driven designs. On the algorithmic side, **SafeMind** introduces risk-aware differentiable control for adaptive quadruped locomotion, addressing safety-critical deployment challenges. **Sim-to-Real transfer** via generalized actuator networks tackles the persistent gap for muscle-actuated robots, improving real-world reliability. Physics-informed reinforcement learning enables map-free autonomous racing, merging domain knowledge with learned policies. **EgoTL's** egocentric think-aloud chains advance long-horizon task reasoning for embodied agents. Collectively, these works reflect converging trends: **biologically inspired hardware, safer learned locomotion policies, and improved sim-to-real transfer** as central pillars of next-generation robotics research.",
+    "videos": [
+      {
+        "title": "Why Every Tech Expert is Now Watching This New AI Robot",
+        "url": "https://youtube.com/watch?v=bwBYN9hun84",
+        "channel": "PRO ROBOTS",
+        "views": 20394,
+        "priority": 1
+      },
+      {
+        "title": "Clone Humanoid Robot With 206 BONES + Superhuman Hand (AI NEWS)",
+        "url": "https://youtube.com/watch?v=k3b0VoYQdbI",
+        "channel": "AI News",
+        "views": 5100,
+        "priority": 1
+      },
+      {
+        "title": "Disney&#39;s New Olaf Robot Isn&#39;t What You Think",
+        "url": "https://youtube.com/watch?v=VvXhpnvjVGE",
+        "channel": "Guide2WDW",
+        "views": 36568,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "Physics-Informed Reinforcement Learning of Spatial Density Velocity Potentials for Map-Free Racing",
+        "url": "http://arxiv.org/abs/2604.09499v1",
+        "authors": [
+          "Shathushan Sivashangaran",
+          "Apoorva Khairnar"
+        ],
+        "abstract": "Autonomous racing without prebuilt maps is a grand challenge for embedded robotics that requires kinodynamic planning from instantaneous sensor data at the acceleration and tire friction limits. Out-Of-Distribution (OOD) generalization to various racetrack configurations utilizes Machine Learning (M"
+      },
+      {
+        "title": "Sim-to-Real Transfer for Muscle-Actuated Robots via Generalized Actuator Networks",
+        "url": "http://arxiv.org/abs/2604.09487v1",
+        "authors": [
+          "Jan Schneider",
+          "Mridul Mahajan"
+        ],
+        "abstract": "Tendon drives paired with soft muscle actuation enable faster and safer robots while potentially accelerating skill acquisition. Still, these systems are rarely used in practice due to inherent nonlinearities, friction, and hysteresis, which complicate modeling and control. So far, these challenges "
+      },
+      {
+        "title": "A three-dimensional morphoelastic model for self-oscillations in polyelectrolyte hydrogel filaments",
+        "url": "http://arxiv.org/abs/2604.09486v1",
+        "authors": [
+          "Ariel Surya Boiardi",
+          "Roberto Marchello"
+        ],
+        "abstract": "We introduce a three-dimensional model for polyelectrolyte hydrogel filaments operating in a fluid environment under an electric field. The formulation builds on a morphoelastic framework for inextensible and unshearable rods, such that the filament's activity is encoded in electric-field-induced sp"
+      },
+      {
+        "title": "SafeMind: A Risk-Aware Differentiable Control Framework for Adaptive and Safe Quadruped Locomotion",
+        "url": "http://arxiv.org/abs/2604.09474v1",
+        "authors": [
+          "Zukun Zhang",
+          "Kai Shu"
+        ],
+        "abstract": "Learning-based quadruped controllers achieve impressive agility but typically lack formal safety guarantees under model uncertainty, perception noise, and unstructured contact conditions. We introduce SafeMind, a differentiable stochastic safety-control framework that unifies probabilistic Control B"
+      },
+      {
+        "title": "EgoTL: Egocentric Think-Aloud Chains for Long-Horizon Tasks",
+        "url": "http://arxiv.org/abs/2604.09535v1",
+        "authors": [
+          "Lulin Liu",
+          "Dayou Li"
+        ],
+        "abstract": "Large foundation models have made significant advances in embodied intelligence, enabling synthesis and reasoning over egocentric input for household tasks. However, VLM-based auto-labeling is often noisy because the primary data sources lack accurate human action labels, chain-of-thought (CoT), and"
+      },
+      {
+        "title": "Many Ways to Be Fake: Benchmarking Fake News Detection Under Strategy-Driven AI Generation",
+        "url": "http://arxiv.org/abs/2604.09514v1",
+        "authors": [
+          "Xinyu Wang",
+          "Sai Koneru"
+        ],
+        "abstract": "Recent advances in large language models (LLMs) have enabled the large-scale generation of highly fluent and deceptive news-like content. While prior work has often treated fake news detection as a binary classification problem, modern fake news increasingly arises through human-AI collaboration, wh"
+      },
+      {
+        "title": "Strategic Algorithmic Monoculture:Experimental Evidence from Coordination Games",
+        "url": "http://arxiv.org/abs/2604.09502v1",
+        "authors": [
+          "Gonzalo Ballestero",
+          "Hadi Hosseini"
+        ],
+        "abstract": "AI agents increasingly operate in multi-agent environments where outcomes depend on coordination. We distinguish primary algorithmic monoculture -- baseline action similarity -- from strategic algorithmic monoculture, whereby agents adjust similarity in response to incentives. We implement a simple "
+      },
+      {
+        "title": "You Can't Fight in Here! This is BBS!",
+        "url": "http://arxiv.org/abs/2604.09501v1",
+        "authors": [
+          "Richard Futrell",
+          "Kyle Mahowald"
+        ],
+        "abstract": "Norm, the formal theoretical linguist, and Claudette, the computational language scientist, have a lovely time discussing whether modern language models can inform important questions in the language sciences. Just as they are about to part ways until they meet again, 25 of their closest friends sho"
+      }
+    ]
+  },
+  {
     "date": "2026-04-12",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances in **whole-body robot control and manipulation**. The *Sumo* framework demonstrates dynamic loco-manipulation enabling robots to handle complex physical interactions, while acoustic-based slip detection (*A-SLIP*) improves in-hand object sensing. **Sim-to-real transfer** remains central, with *SIM1* offering physics-aligned simulation for deformable environments as a zero-shot data scaling solution. **Egocentric learning** gains traction through *ActiveGlasses*, leveraging human demonstrations for manipulation tasks. On the animation side, *GaussiAnimate* advances animatable 3D reconstruction. Popular media reflects growing public interest, with AI locomotion refinement and humanoid e-skin developments capturing attention. Collectively, these works underscore a convergence toward **generalizable, sensor-rich, physically grounded** robotic systems capable of operating in unstructured real-world environments.",
     "videos": [
