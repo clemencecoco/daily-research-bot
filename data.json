@@ -1,5 +1,119 @@
 [
   {
+    "date": "2026-04-14",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research reflects accelerating progress in **physical AI and robot learning**. IBM's coverage of real-world robot adaptation and humanoid platforms—including Clone Robot's 206-bone biomimetic design—highlight the push toward human-like dexterity and morphology. Disney's character robotics demonstrate expressive embodied AI applications.\n\nOn the research front, **robot co-design** (Vaish & Brock) examines inductive biases for optimizing robot structure and control jointly. **StarVLA-α** reduces complexity in Vision-Language-Action systems, improving scalability for manipulation tasks. **Disentangled Point Diffusion** advances precise object placement critical for dexterous manipulation. Multi-robot coordination is addressed through **angle-based rigidity maintenance** frameworks.\n\nCollectively, trends emphasize biomimetic design, streamlined VLA architectures, physics-informed learning, and tighter integration between perception, language, and action in embodied systems.",
+    "videos": [
+      {
+        "title": "Why Every Tech Expert is Now Watching This New AI Robot",
+        "url": "https://youtube.com/watch?v=bwBYN9hun84",
+        "channel": "PRO ROBOTS",
+        "views": 21085,
+        "priority": 1
+      },
+      {
+        "title": "Clone Humanoid Robot With 206 BONES + Superhuman Hand (AI NEWS)",
+        "url": "https://youtube.com/watch?v=k3b0VoYQdbI",
+        "channel": "AI News",
+        "views": 5479,
+        "priority": 1
+      },
+      {
+        "title": "Irã desafia Trump e ameaça VÓRTICE MORTAL em Ormuz!! + Erdogan ameaça guerra Contra Israel!!",
+        "url": "https://youtube.com/watch?v=QClt51LMoAw",
+        "channel": "História em Gotas",
+        "views": 11899,
+        "priority": 1
+      },
+      {
+        "title": "Disney&#39;s New Olaf Robot Isn&#39;t What You Think",
+        "url": "https://youtube.com/watch?v=VvXhpnvjVGE",
+        "channel": "Guide2WDW",
+        "views": 42925,
+        "priority": 1
+      },
+      {
+        "title": "What is Physical AI? How Robots Learn &amp; Adapt in Real Life",
+        "url": "https://youtube.com/watch?v=GOsnf5lOIrI",
+        "channel": "IBM Technology",
+        "views": 6805,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "Disentangled Point Diffusion for Precise Object Placement",
+        "url": "http://arxiv.org/abs/2604.11793v1",
+        "authors": [
+          "Lyuxing He",
+          "Eric Cai"
+        ],
+        "abstract": "Recent advances in robotic manipulation have highlighted the effectiveness of learning from demonstration. However, while end-to-end policies excel in expressivity and flexibility, they struggle both in generalizing to novel object geometries and in attaining a high degree of precision. An alternati"
+      },
+      {
+        "title": "Identifying Inductive Biases for Robot Co-Design",
+        "url": "http://arxiv.org/abs/2604.11768v1",
+        "authors": [
+          "Apoorv Vaish",
+          "Oliver Brock"
+        ],
+        "abstract": "Co-designing a robot's morphology and control can ensure synergistic interactions between them, prevalent in biological organisms. However, co-design is a high-dimensional search problem. To make this search tractable, we need a systematic method for identifying inductive biases tailored to its stru"
+      },
+      {
+        "title": "StarVLA-$α$: Reducing Complexity in Vision-Language-Action Systems",
+        "url": "http://arxiv.org/abs/2604.11757v1",
+        "authors": [
+          "Jinhui Ye",
+          "Ning Gao"
+        ],
+        "abstract": "Vision-Language-Action (VLA) models have recently emerged as a promising paradigm for building general-purpose robotic agents. However, the VLA landscape remains highly fragmented and complex: as existing approaches vary substantially in architectures, training data, embodiment configurations, and b"
+      },
+      {
+        "title": "Angle-based Localization and Rigidity Maintenance Control for Multi-Robot Networks",
+        "url": "http://arxiv.org/abs/2604.11754v1",
+        "authors": [
+          "J. Francisco Presenza",
+          "Leonardo J. Colombo"
+        ],
+        "abstract": "In this work, we study angle-based localization and rigidity maintenance control for multi-robot networks under sensing constraints. We establish the first equivalence between angle rigidity and bearing rigidity considering \\textit{directed} sensing graphs and \\textit{body-frame} bearing measurement"
+      },
+      {
+        "title": "C-ReD: A Comprehensive Chinese Benchmark for AI-Generated Text Detection Derived from Real-World Prompts",
+        "url": "http://arxiv.org/abs/2604.11796v1",
+        "authors": [
+          "Chenxi Qing",
+          "Junxi Wu"
+        ],
+        "abstract": "Recently, large language models (LLMs) are capable of generating highly fluent textual content. While they offer significant convenience to humans, they also introduce various risks, like phishing and academic dishonesty. Numerous research efforts have been dedicated to developing algorithms for det"
+      },
+      {
+        "title": "ClawGuard: A Runtime Security Framework for Tool-Augmented LLM Agents Against Indirect Prompt Injection",
+        "url": "http://arxiv.org/abs/2604.11790v1",
+        "authors": [
+          "Wei Zhao",
+          "Zhe Li"
+        ],
+        "abstract": "Tool-augmented Large Language Model (LLM) agents have demonstrated impressive capabilities in automating complex, multi-step real-world tasks, yet remain vulnerable to indirect prompt injection. Adversaries exploit this weakness by embedding malicious instructions within tool-returned content, which"
+      },
+      {
+        "title": "Towards Automated Pentesting with Large Language Models",
+        "url": "http://arxiv.org/abs/2604.11772v1",
+        "authors": [
+          "Ricardo Bessa",
+          "Rui Claro"
+        ],
+        "abstract": "Large Language Models (LLMs) are redefining offensive cybersecurity by allowing the generation of harmful machine code with minimal human intervention. While attackers take advantage of dark LLMs such as XXXGPT and WolfGPT to produce malicious code, ethical hackers can follow similar approaches to a"
+      },
+      {
+        "title": "Physics-Informed State Space Models for Reliable Solar Irradiance Forecasting in Off-Grid Systems",
+        "url": "http://arxiv.org/abs/2604.11807v1",
+        "authors": [
+          "Mohammed Ezzaldin Babiker Abdullah"
+        ],
+        "abstract": "The stable operation of autonomous off-grid photovoltaic systems dictates reliance on solar forecasting algorithms that respect atmospheric thermodynamics. Contemporary deep learning models consistently exhibit critical anomalies, primarily severe temporal phase lags during cloud transients and phys"
+      }
+    ]
+  },
+  {
     "date": "2026-04-13",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight significant advances across hardware and learning-based control. The **Clone humanoid robot's 206-bone skeleton** and Disney's expressive Olaf robot demonstrate growing sophistication in biomimetic and character-driven designs. On the algorithmic side, **SafeMind** introduces risk-aware differentiable control for adaptive quadruped locomotion, addressing safety-critical deployment challenges. **Sim-to-Real transfer** via generalized actuator networks tackles the persistent gap for muscle-actuated robots, improving real-world reliability. Physics-informed reinforcement learning enables map-free autonomous racing, merging domain knowledge with learned policies. **EgoTL's** egocentric think-aloud chains advance long-horizon task reasoning for embodied agents. Collectively, these works reflect converging trends: **biologically inspired hardware, safer learned locomotion policies, and improved sim-to-real transfer** as central pillars of next-generation robotics research.",
     "videos": [
