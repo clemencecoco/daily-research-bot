@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026-04-15",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research reveals a strong convergence toward **dexterous, adaptive humanoid robotics**. Touch-based learning (*Touch Dreaming*) and vision-to-geometry mapping frameworks are enhancing manipulation precision beyond language-dependent models. Multi-skill continual learning (*Tree Learning*) enables humanoids to acquire complex behaviors incrementally without catastrophic forgetting. High-fidelity hardware advances—including Clone Robotics' 206-bone humanoid with superhuman hands—are closing the gap between biological and mechanical dexterity.\n\nOn the systems side, dexterous teleoperation interfaces (*XRZero-G0*) improve data quality for imitation learning. IBM and industry voices emphasize **Physical AI**—robots that learn and adapt through real-world interaction. Disney's character robotics and generative 3D environments (*Lyra 2.0*) further signal growing investment in expressive, context-aware embodied agents.",
+    "videos": [
+      {
+        "title": "Why Every Tech Expert is Now Watching This New AI Robot",
+        "url": "https://youtube.com/watch?v=bwBYN9hun84",
+        "channel": "PRO ROBOTS",
+        "views": 41298,
+        "priority": 1
+      },
+      {
+        "title": "Clone Humanoid Robot With 206 BONES + Superhuman Hand (AI NEWS)",
+        "url": "https://youtube.com/watch?v=k3b0VoYQdbI",
+        "channel": "AI News",
+        "views": 5678,
+        "priority": 1
+      },
+      {
+        "title": "Disney&#39;s New Olaf Robot Isn&#39;t What You Think",
+        "url": "https://youtube.com/watch?v=VvXhpnvjVGE",
+        "channel": "Guide2WDW",
+        "views": 54565,
+        "priority": 1
+      },
+      {
+        "title": "What is Physical AI? How Robots Learn &amp; Adapt in Real Life",
+        "url": "https://youtube.com/watch?v=GOsnf5lOIrI",
+        "channel": "IBM Technology",
+        "views": 9633,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "Learning Versatile Humanoid Manipulation with Touch Dreaming",
+        "url": "http://arxiv.org/abs/2604.13015v1",
+        "authors": [
+          "Yaru Niu",
+          "Zhenlong Fang"
+        ],
+        "abstract": "Humanoid robots promise general-purpose assistance, yet real-world humanoid loco-manipulation remains challenging because it requires whole-body stability, dexterous hands, and contact-aware perception under frequent contact changes. In this work, we study dexterous, contact-rich humanoid loco-manip"
+      },
+      {
+        "title": "XRZero-G0: Pushing the Frontier of Dexterous Robotic Manipulation with Interfaces, Quality and Ratios",
+        "url": "http://arxiv.org/abs/2604.13001v1",
+        "authors": [
+          "Junming Wang",
+          "Teng Pu"
+        ],
+        "abstract": "The acquisition of high-quality, action-aligned demonstration data remains a fundamental bottleneck in scaling foundation models for dexterous robot manipulation. Although robot-free human demonstrations (e.g., the UMI paradigm) offer a scalable alternative to traditional teleoperation, current syst"
+      },
+      {
+        "title": "Tree Learning: A Multi-Skill Continual Learning Framework for Humanoid Robots",
+        "url": "http://arxiv.org/abs/2604.12909v1",
+        "authors": [
+          "Yifei Yan",
+          "Linqi Ye"
+        ],
+        "abstract": "As reinforcement learning for humanoid robots evolves from single-task to multi-skill paradigms, efficiently expanding new skills while avoiding catastrophic forgetting has become a key challenge in embodied intelligence. Existing approaches either rely on complex topology adjustments in Mixture-of-"
+      },
+      {
+        "title": "Robotic Manipulation is Vision-to-Geometry Mapping ($f(v) \\rightarrow G$): Vision-Geometry Backbones over Language and Video Models",
+        "url": "http://arxiv.org/abs/2604.12908v1",
+        "authors": [
+          "Zijian Song",
+          "Qichang Li"
+        ],
+        "abstract": "At its core, robotic manipulation is a problem of vision-to-geometry mapping ($f(v) \\rightarrow G$). Physical actions are fundamentally defined by geometric properties like 3D positions and spatial relationships. Consequently, we argue that the foundation for generalizable robotic control should be "
+      },
+      {
+        "title": "DySkew: Dynamic Data Redistribution for Skew-Resilient Snowpark UDF Execution",
+        "url": "http://arxiv.org/abs/2604.13034v1",
+        "authors": [
+          "Chenwei Xie",
+          "Urjeet Shrestha"
+        ],
+        "abstract": "Snowflake revolutionized data warehousing with an elastic architecture that decouples compute and storage, enabling scalable solutions for diverse data analytics needs. Building on this foundation, Snowflake has advanced its AI Data Cloud vision by introducing Snowpark, a managed turnkey solution th"
+      },
+      {
+        "title": "Toward Autonomous Long-Horizon Engineering for ML Research",
+        "url": "http://arxiv.org/abs/2604.13018v1",
+        "authors": [
+          "Guoxin Chen",
+          "Jie Chen"
+        ],
+        "abstract": "Autonomous AI research has advanced rapidly, but long-horizon ML research engineering remains difficult: agents must sustain coherent progress across task comprehension, environment setup, implementation, experimentation, and debugging over hours or days. We introduce AiScientist, a system for auton"
+      },
+      {
+        "title": "PAL: Personal Adaptive Learner",
+        "url": "http://arxiv.org/abs/2604.13017v1",
+        "authors": [
+          "Megha Chakraborty",
+          "Darssan L. Eswaramoorthi"
+        ],
+        "abstract": "AI-driven education platforms have made some progress in personalisation, yet most remain constrained to static adaptation--predefined quizzes, uniform pacing, or generic feedback--limiting their ability to respond to learners' evolving understanding. This shortfall highlights the need for systems t"
+      },
+      {
+        "title": "Lyra 2.0: Explorable Generative 3D Worlds",
+        "url": "http://arxiv.org/abs/2604.13036v1",
+        "authors": [
+          "Tianchang Shen",
+          "Sherwin Bahmani"
+        ],
+        "abstract": "Recent advances in video generation enable a new paradigm for 3D scene creation: generating camera-controlled videos that simulate scene walkthroughs, then lifting them to 3D via feed-forward reconstruction techniques. This generative reconstruction approach combines the visual fidelity and creative"
+      }
+    ]
+  },
+  {
     "date": "2026-04-14",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research reflects accelerating progress in **physical AI and robot learning**. IBM's coverage of real-world robot adaptation and humanoid platforms—including Clone Robot's 206-bone biomimetic design—highlight the push toward human-like dexterity and morphology. Disney's character robotics demonstrate expressive embodied AI applications.\n\nOn the research front, **robot co-design** (Vaish & Brock) examines inductive biases for optimizing robot structure and control jointly. **StarVLA-α** reduces complexity in Vision-Language-Action systems, improving scalability for manipulation tasks. **Disentangled Point Diffusion** advances precise object placement critical for dexterous manipulation. Multi-robot coordination is addressed through **angle-based rigidity maintenance** frameworks.\n\nCollectively, trends emphasize biomimetic design, streamlined VLA architectures, physics-informed learning, and tighter integration between perception, language, and action in embodied systems.",
     "videos": [
