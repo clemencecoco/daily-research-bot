@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026-04-16",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances in **Physical AI and embodied intelligence**. Hierarchical manipulation systems like **HiVLA** demonstrate improved visual-grounded robot control, while **SpatialEvo** pushes self-evolving spatial reasoning through geometric environments. Bio-inspired architectures are gaining traction, with **Artificial Tripartite Intelligence** proposing sensor-first designs mimicking biological systems, and **neuromorphic spiking ring attractors** enabling efficient proprioceptive joint-state estimation for legged robots.\n\nOn the learning side, reinforcement learning approaches (illustrated by AI-trained locomotion demonstrations) show robots developing emergent running behaviors. **IBM's Physical AI** framing emphasizes real-world adaptation capabilities. Supporting advances in **motion synchronization** and **dynamic system identification** further strengthen robot perception and control pipelines critical for robust quadruped deployment.",
+    "videos": [
+      {
+        "title": "Mech Arena Promo Codes 👀The ONE Secret Every Player Needs🤫 (Spring 2026)",
+        "url": "https://youtube.com/watch?v=yFhU1b1g3Xk",
+        "channel": "GameGeeksTricks [GGT] [2GT]",
+        "views": 9226,
+        "priority": 1
+      },
+      {
+        "title": "Disney&#39;s New Olaf Robot Isn&#39;t What You Think",
+        "url": "https://youtube.com/watch?v=VvXhpnvjVGE",
+        "channel": "Guide2WDW",
+        "views": 62895,
+        "priority": 1
+      },
+      {
+        "title": "AI Chicken learns to RUN",
+        "url": "https://youtube.com/watch?v=mn-SrinGXB8",
+        "channel": "Pezzza's Work",
+        "views": 42347,
+        "priority": 1
+      },
+      {
+        "title": "What is Physical AI? How Robots Learn &amp; Adapt in Real Life",
+        "url": "https://youtube.com/watch?v=GOsnf5lOIrI",
+        "channel": "IBM Technology",
+        "views": 10815,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+        "url": "http://arxiv.org/abs/2604.14125v1",
+        "authors": [
+          "Tianshuo Yang",
+          "Guanyu Chen"
+        ],
+        "abstract": "While end-to-end Vision-Language-Action (VLA) models offer a promising paradigm for robotic manipulation, fine-tuning them on narrow control data often compromises the profound reasoning capabilities inherited from their base Vision-Language Models (VLMs). To resolve this fundamental trade-off, we p"
+      },
+      {
+        "title": "Neuromorphic Spiking Ring Attractor for Proprioceptive Joint-State Estimation",
+        "url": "http://arxiv.org/abs/2604.14021v1",
+        "authors": [
+          "Federica Ferrari",
+          "Flavia Davidhi"
+        ],
+        "abstract": "Maintaining stable internal representations of continuous variables is fundamental for effective robotic control. Continuous attractor networks provide a biologically inspired mechanism for encoding such variables, yet neuromorphic realizations have rarely addressed proprioceptive estimation under r"
+      },
+      {
+        "title": "[Emerging Ideas] Artificial Tripartite Intelligence: A Bio-Inspired, Sensor-First Architecture for Physical AI",
+        "url": "http://arxiv.org/abs/2604.13959v1",
+        "authors": [
+          "You Rim Choi",
+          "Subeom Park"
+        ],
+        "abstract": "As AI moves from data centers to robots and wearables, scaling ever-larger models becomes insufficient. Physical AI operates under tight latency, energy, privacy, and reliability constraints, and its performance depends not only on model capacity but also on how signals are acquired through controll"
+      },
+      {
+        "title": "Anchored Spectral Estimator for Rigid Motion Synchronization",
+        "url": "http://arxiv.org/abs/2604.13915v1",
+        "authors": [
+          "Ziyue Zhao",
+          "Huikang Liu"
+        ],
+        "abstract": "A rigid motion in $\\mathbb{R}^d$ consists of a proper rotation and a translation, and it can be represented as a matrix in $\\mathbb{R}^{(d+1)\\times (d+1)}$. The problem of rigid motion synchronization aims to estimate a collection of rigid motions $G^*_1, \\dots, G^*_n$ from noisy observations of the"
+      },
+      {
+        "title": "SpatialEvo: Self-Evolving Spatial Intelligence via Deterministic Geometric Environments",
+        "url": "http://arxiv.org/abs/2604.14144v1",
+        "authors": [
+          "Dinging Li",
+          "Yingxiu Zhao"
+        ],
+        "abstract": "Spatial reasoning over three-dimensional scenes is a core capability for embodied intelligence, yet continuous model improvement remains bottlenecked by the cost of geometric annotation. The self-evolving paradigm offers a promising path, but its reliance on model consensus to construct pseudo-label"
+      },
+      {
+        "title": "AI-assisted modeling and Bayesian inference of unpolarized quark transverse momentum distributions from Drell-Yan data",
+        "url": "http://arxiv.org/abs/2604.14133v1",
+        "authors": [
+          "Zhong-Bo Kang",
+          "Luke Sellers"
+        ],
+        "abstract": "We present an extraction of unpolarized quark transverse-momentum-dependent parton distribution functions (TMD PDFs) from Drell-Yan data within a Bayesian inference framework, incorporating artificial intelligence at multiple stages of the analysis. Our analysis is performed at ${\\rm N^3LO}$ in pert"
+      },
+      {
+        "title": "AI-assisted writing and the reorganization of scientific knowledge",
+        "url": "http://arxiv.org/abs/2604.14126v1",
+        "authors": [
+          "Erjia Yan",
+          "Chaoqun Ni"
+        ],
+        "abstract": "Generative AI systems such as ChatGPT are increasingly used in scientific writing, yet their broader implications for the organization of scientific knowledge remain unclear. We examine whether AI-assisted writing intensity, measured as the share of text in a paper that is predicted to exhibit featu"
+      },
+      {
+        "title": "Joint Identification of Linear Dynamics and Noise Covariance via Distributional Estimation",
+        "url": "http://arxiv.org/abs/2604.14130v1",
+        "authors": [
+          "Yang Hu",
+          "Na Li"
+        ],
+        "abstract": "In this paper, we propose a novel framework for the joint identification of system dynamics and noise covariance in linear systems, under general noise distributions beyond Gaussian. Specifically, we would like to simultaneously estimate the dynamical matrix $A$ and the noise covariance matrix $\\var"
+      }
+    ]
+  },
+  {
     "date": "2026-04-15",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research reveals a strong convergence toward **dexterous, adaptive humanoid robotics**. Touch-based learning (*Touch Dreaming*) and vision-to-geometry mapping frameworks are enhancing manipulation precision beyond language-dependent models. Multi-skill continual learning (*Tree Learning*) enables humanoids to acquire complex behaviors incrementally without catastrophic forgetting. High-fidelity hardware advances—including Clone Robotics' 206-bone humanoid with superhuman hands—are closing the gap between biological and mechanical dexterity.\n\nOn the systems side, dexterous teleoperation interfaces (*XRZero-G0*) improve data quality for imitation learning. IBM and industry voices emphasize **Physical AI**—robots that learn and adapt through real-world interaction. Disney's character robotics and generative 3D environments (*Lyra 2.0*) further signal growing investment in expressive, context-aware embodied agents.",
     "videos": [
