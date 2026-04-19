@@ -1,5 +1,120 @@
 [
   {
+    "date": "2026-04-19",
+    "summary": "## Quadruped Robotics & Embodied AI: Key Trends Summary\n\nRecent research and media highlight accelerating progress across robot learning, safety, and simulation-to-reality transfer. Unitree's H1 humanoid achieving world-record performance signals rapid hardware advancement, while OpenClaw AI demonstrates accessible robot control interfaces. On the learning side, a neural \"AI Chicken\" mastering locomotion through reinforcement learning exemplifies embodied skill acquisition.\n\nKey arXiv contributions include hierarchical action tokenization enabling in-context imitation learning, abstract Sim2Real methods bridging simulation gaps via approximate information states, and 3D policy learning revisited for richer spatial reasoning. Vision-based human-robot collaboration now incorporates formal uncertainty guarantees, enhancing deployment safety. NEAT-guided navigation cells offer bio-inspired path planning improvements.\n\nOverall, trends emphasize **safe deployment**, **efficient robot learning from demonstrations**, and **robust sim-to-real transfer** as central challenges in embodied AI.",
+    "videos": [
+      {
+        "title": "Unboxing the FUTURE! Claw Stage – OpenClaw AI Controls Robots 🤖",
+        "url": "https://youtube.com/watch?v=SFyUMjWj880",
+        "channel": "KhanFlicks",
+        "views": 132462,
+        "priority": 1
+      },
+      {
+        "title": "China’s New H1 AI Robot Just BROKE the World Record… This Is Insane",
+        "url": "https://youtube.com/watch?v=jz3TC2ZkLgw",
+        "channel": "NextGen Humanoids",
+        "views": 54702,
+        "priority": 1
+      },
+      {
+        "title": "Mech Arena Promo Codes 👀The ONE Secret Every Player Needs🤫 (Spring 2026)",
+        "url": "https://youtube.com/watch?v=yFhU1b1g3Xk",
+        "channel": "GameGeeksTricks [GGT] [2GT]",
+        "views": 13111,
+        "priority": 1
+      },
+      {
+        "title": "AI Chicken learns to RUN",
+        "url": "https://youtube.com/watch?v=mn-SrinGXB8",
+        "channel": "Pezzza's Work",
+        "views": 58653,
+        "priority": 1
+      },
+      {
+        "title": "What is Physical AI? How Robots Learn &amp; Adapt in Real Life",
+        "url": "https://youtube.com/watch?v=GOsnf5lOIrI",
+        "channel": "IBM Technology",
+        "views": 13017,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "Abstract Sim2Real through Approximate Information States",
+        "url": "http://arxiv.org/abs/2604.15289v1",
+        "authors": [
+          "Yunfu Deng",
+          "Yuhao Li"
+        ],
+        "abstract": "In recent years, reinforcement learning (RL) has shown remarkable success in robotics when a fast and accurate simulator is available for a given task. When using RL and simulation, more simulator realism is generally beneficial but becomes harder to obtain as robots are deployed in increasingly com"
+      },
+      {
+        "title": "Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees",
+        "url": "http://arxiv.org/abs/2604.15221v1",
+        "authors": [
+          "Jakob Thumm",
+          "Marian Frei"
+        ],
+        "abstract": "We propose a framework for vision-based human pose estimation and motion prediction that gives conformal prediction guarantees for certifiably safe human-robot collaboration. Our framework combines aleatoric uncertainty estimation with OOD detection for high probabilistic confidence. To integrate ou"
+      },
+      {
+        "title": "A Hierarchical Spatiotemporal Action Tokenizer for In-Context Imitation Learning in Robotics",
+        "url": "http://arxiv.org/abs/2604.15215v1",
+        "authors": [
+          "Fawad Javed Fateh",
+          "Ali Shah Ali"
+        ],
+        "abstract": "We present a novel hierarchical spatiotemporal action tokenizer for in-context imitation learning. We first propose a hierarchical approach, which consists of two successive levels of vector quantization. In particular, the lower level assigns input actions to fine-grained subclusters, while the hig"
+      },
+      {
+        "title": "NEAT-NC: NEAT guided Navigation Cells for Robot Path Planning",
+        "url": "http://arxiv.org/abs/2604.15076v1",
+        "authors": [
+          "Hibatallah Meliani",
+          "Khadija Slimani"
+        ],
+        "abstract": "To navigate a space, the brain makes an internal representation of the environment using different cells such as place cells, grid cells, head direction cells, border cells, and speed cells. All these cells, along with sensory inputs, enable an organism to explore the space around it. Inspired by th"
+      },
+      {
+        "title": "R3D: Revisiting 3D Policy Learning",
+        "url": "http://arxiv.org/abs/2604.15281v1",
+        "authors": [
+          "Zhengdong Hong",
+          "Shenrui Wu"
+        ],
+        "abstract": "3D policy learning promises superior generalization and cross-embodiment transfer, but progress has been hindered by training instabilities and severe overfitting, precluding the adoption of powerful 3D perception models. In this work, we systematically diagnose these failures, identifying the omiss"
+      },
+      {
+        "title": "Goxpyriment: A Go Framework for Behavioral and Cognitive Experiments",
+        "url": "http://arxiv.org/abs/2604.15245v1",
+        "authors": [
+          "Christophe Pallier",
+          "Julie Bonnaire"
+        ],
+        "abstract": "We introduce `Goxpyriment', a new open-source software framework for programming behavioral and cognitive experiments using the Go programming language. The library is designed to address some limitations of existing Python-based experiment tools, particularly the runtime environment complexity that"
+      },
+      {
+        "title": "TokenGS: Decoupling 3D Gaussian Prediction from Pixels with Learnable Tokens",
+        "url": "http://arxiv.org/abs/2604.15239v1",
+        "authors": [
+          "Jiawei Ren",
+          "Michal Jan Tyszkiewicz"
+        ],
+        "abstract": "In this work, we revisit several key design choices of modern Transformer-based approaches for feed-forward 3D Gaussian Splatting (3DGS) prediction. We argue that the common practice of regressing Gaussian means as depths along camera rays is suboptimal, and instead propose to directly regress 3D me"
+      },
+      {
+        "title": "Gravitational-wave lensing beyond rays: a disordered-system approach",
+        "url": "http://arxiv.org/abs/2604.15313v1",
+        "authors": [
+          "Ripalta Amoruso",
+          "Ginevra Braga"
+        ],
+        "abstract": "We develop a framework to describe gravitational wave propagation through a stochastic distribution of weak gravitational lenses beyond the geometric optics limit. We model the lens distribution as a static random background field and formulate the problem in the language of quenched disorder, treat"
+      }
+    ]
+  },
+  {
     "date": "2026-04-18",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight rapid advances across robot learning, safety, and sim-to-real transfer. China's humanoid robots achieved remarkable locomotion milestones, with marathon-capable robots demonstrating dramatic speed improvements within a year. IBM's framing of \"Physical AI\" underscores growing interest in adaptive, real-world robot learning.\n\nOn the research front, **Sim2Real transfer** via approximate information states improves policy robustness across domain gaps. **Safe human-robot collaboration** gains traction through vision-based uncertainty guarantees. **Imitation learning** advances with hierarchical spatiotemporal action tokenizers enabling in-context generalization. **3D policy learning** (R3D) and **TokenGS** push richer environmental representations for manipulation. **NEAT-guided navigation cells** offer bio-inspired path planning improvements.\n\nOverall, the field is converging on scalable, safe, and generalizable embodied intelligence for real-world deployment.",
     "videos": [
