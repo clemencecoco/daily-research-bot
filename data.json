@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-04-20",
+    "summary": "## Research Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight growing interest in **language-guided robot intelligence** and **physical AI systems**. IBM's overview of Physical AI underscores how robots increasingly learn and adapt through real-world interaction. The **Semantic Area Graph Reasoning** paper advances multi-robot coordination using natural language for search tasks, reflecting strong momentum in LLM-robot integration. **AEGIS** addresses a critical challenge in deploying vision-language-action models—preserving prior knowledge during fine-tuning via gradient isolation, essential for versatile embodied agents. **DENALI** contributes low-cost LiDAR datasets for non-line-of-sight spatial reasoning, improving robot perception in occluded environments. Collectively, these works emphasize **scalable perception, language grounding, and continual learning** as central pillars driving next-generation autonomous robotic systems.\n\n*Note: Several sources were unrelated to robotics/AI research and were appropriately deprioritized.*",
+    "videos": [
+      {
+        "title": "Unboxing the FUTURE! Claw Stage – OpenClaw AI Controls Robots 🤖",
+        "url": "https://youtube.com/watch?v=SFyUMjWj880",
+        "channel": "KhanFlicks",
+        "views": 132422,
+        "priority": 1
+      },
+      {
+        "title": "How to Store Onions for a Whole Year Without Rotting or Sprouting! |Clever Tricks",
+        "url": "https://youtube.com/watch?v=z7JEvZao_v4",
+        "channel": "Clever Tricks",
+        "views": 16995,
+        "priority": 1
+      },
+      {
+        "title": "Mech Arena Promo Codes 👀The ONE Secret Every Player Needs🤫 (Spring 2026)",
+        "url": "https://youtube.com/watch?v=yFhU1b1g3Xk",
+        "channel": "GameGeeksTricks [GGT] [2GT]",
+        "views": 13868,
+        "priority": 1
+      },
+      {
+        "title": "What is Physical AI? How Robots Learn &amp; Adapt in Real Life",
+        "url": "https://youtube.com/watch?v=GOsnf5lOIrI",
+        "channel": "IBM Technology",
+        "views": 13721,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "Semantic Area Graph Reasoning for Multi-Robot Language-Guided Search",
+        "url": "http://arxiv.org/abs/2604.16263v1",
+        "authors": [
+          "Ruiyang Wang",
+          "Hao-Lun Hsu"
+        ],
+        "abstract": "Coordinating multi-robot systems (MRS) to search in unknown environments is particularly challenging for tasks that require semantic reasoning beyond geometric exploration. Classical coordination strategies rely on frontier coverage or information gain and cannot incorporate high-level task intent, "
+      },
+      {
+        "title": "DENALI: A Dataset Enabling Non-Line-of-Sight Spatial Reasoning with Low-Cost LiDARs",
+        "url": "http://arxiv.org/abs/2604.16201v1",
+        "authors": [
+          "Nikhil Behari",
+          "Diego Rivero"
+        ],
+        "abstract": "Consumer LiDARs in mobile devices and robots typically output a single depth value per pixel. Yet internally, they record full time-resolved histograms containing direct and multi-bounce light returns; these multi-bounce returns encode rich non-line-of-sight (NLOS) cues that can enable perception of"
+      },
+      {
+        "title": "Logarithmic-Time Geodesically Convex Decomposition in Programmable Matter",
+        "url": "http://arxiv.org/abs/2604.16112v1",
+        "authors": [
+          "Henning Hillebrandt",
+          "Andreas Padalkin"
+        ],
+        "abstract": "The decomposition of complex structures into simpler substructures is a powerful technique with a wide range of applications. We study the computation of decompositions in the context of programmable matter. The amoebot model is a well-established model for programmable matter, which places $n$ tiny"
+      },
+      {
+        "title": "AEGIS: Anchor-Enforced Gradient Isolation for Knowledge-Preserving Vision-Language-Action Fine-Tuning",
+        "url": "http://arxiv.org/abs/2604.16067v1",
+        "authors": [
+          "Guransh Singh"
+        ],
+        "abstract": "Adapting pre-trained vision-language models (VLMs) for robotic control requires injecting high-magnitude continuous gradients from a flow-matching action expert into a backbone trained exclusively with cross-entropy. This cross-modal gradient asymmetry - the spectral dimensionality mismatch between "
+      },
+      {
+        "title": "ASMR-Bench: Auditing for Sabotage in ML Research",
+        "url": "http://arxiv.org/abs/2604.16286v1",
+        "authors": [
+          "Eric Gan",
+          "Aryan Bhatt"
+        ],
+        "abstract": "As AI systems are increasingly used to conduct research autonomously, misaligned systems could introduce subtle flaws that produce misleading results while evading detection. We introduce ASMR-Bench (Auditing for Sabotage in ML Research), a benchmark for evaluating the ability of auditors to detect "
+      },
+      {
+        "title": "VEFX-Bench: A Holistic Benchmark for Generic Video Editing and Visual Effects",
+        "url": "http://arxiv.org/abs/2604.16272v1",
+        "authors": [
+          "Xiangbo Gao",
+          "Sicong Jiang"
+        ],
+        "abstract": "As AI-assisted video creation becomes increasingly practical, instruction-guided video editing has become essential for refining generated or captured footage to meet professional requirements. Yet the field still lacks both a large-scale human-annotated dataset with complete editing examples and a "
+      },
+      {
+        "title": "Characterising LLM-Generated Competency Questions: a Cross-Domain Empirical Study using Open and Closed Models",
+        "url": "http://arxiv.org/abs/2604.16258v1",
+        "authors": [
+          "Reham Alharbi",
+          "Valentina Tamma"
+        ],
+        "abstract": "Competency Questions (CQs) are a cornerstone of requirement elicitation in ontology engineering. CQs represent requirements as a set of natural language questions that an ontology should satisfy; they are traditionally modelled by ontology engineers together with domain experts as part of a human-ce"
+      },
+      {
+        "title": "Geometric regularization of autoencoders via observed stochastic dynamics",
+        "url": "http://arxiv.org/abs/2604.16282v1",
+        "authors": [
+          "Sean Hill",
+          "Felix X. -F. Ye"
+        ],
+        "abstract": "Stochastic dynamical systems with slow or metastable behavior evolve, on long time scales, on an unknown low-dimensional manifold in high-dimensional ambient space. Building a reduced simulator from short-burst ambient ensembles is a long-standing problem: local-chart methods like ATLAS suffer from "
+      }
+    ]
+  },
+  {
     "date": "2026-04-19",
     "summary": "## Quadruped Robotics & Embodied AI: Key Trends Summary\n\nRecent research and media highlight accelerating progress across robot learning, safety, and simulation-to-reality transfer. Unitree's H1 humanoid achieving world-record performance signals rapid hardware advancement, while OpenClaw AI demonstrates accessible robot control interfaces. On the learning side, a neural \"AI Chicken\" mastering locomotion through reinforcement learning exemplifies embodied skill acquisition.\n\nKey arXiv contributions include hierarchical action tokenization enabling in-context imitation learning, abstract Sim2Real methods bridging simulation gaps via approximate information states, and 3D policy learning revisited for richer spatial reasoning. Vision-based human-robot collaboration now incorporates formal uncertainty guarantees, enhancing deployment safety. NEAT-guided navigation cells offer bio-inspired path planning improvements.\n\nOverall, trends emphasize **safe deployment**, **efficient robot learning from demonstrations**, and **robust sim-to-real transfer** as central challenges in embodied AI.",
     "videos": [
