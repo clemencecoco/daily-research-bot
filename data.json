@@ -1,5 +1,104 @@
 [
   {
+    "date": "2026-04-21",
+    "summary": "# Quadruped Robotics & Embodied AI: Recent Trends Summary\n\nRecent developments highlight **accelerating progress in legged and humanoid robotics**, exemplified by China's robot marathon showcasing dramatic locomotion improvements—from stumbling to 10 meters/second in one year—drawing global attention. OpenClaw AI demonstrates accessible robotic manipulation through AI-controlled systems.\n\nOn the research front, **cooperative manipulation** advances via SynAgent's solo-to-cooperative humanoid framework, while **LLM-based embodied planning** faces scrutiny over systematic safety risks. MultiWorld's scalable multi-agent video world models offer promising infrastructure for robot perception. Bounded Ratio Reinforcement Learning provides theoretical training improvements applicable to locomotion policies.\n\nKey tensions emerge between **rapid capability gains** and **safety/reliability concerns**, particularly as language models increasingly guide physical robot decision-making in real-world deployments.",
+    "videos": [
+      {
+        "title": "Unboxing the FUTURE! Claw Stage – OpenClaw AI Controls Robots 🤖",
+        "url": "https://youtube.com/watch?v=SFyUMjWj880",
+        "channel": "KhanFlicks",
+        "views": 132550,
+        "priority": 1
+      },
+      {
+        "title": "Gutfeld: They took the bait…",
+        "url": "https://youtube.com/watch?v=P6eV8yHJzB4",
+        "channel": "Fox News",
+        "views": 17270,
+        "priority": 1
+      },
+      {
+        "title": "1年前蹣跚學步被嘲笑，1年後1秒10米健步如飛！中國“機器人馬拉松”現場視頻火遍全球！美國遊客驚呼：進化速度太快了？",
+        "url": "https://youtube.com/watch?v=4-kpIM7xXCk",
+        "channel": "星球熱點 - 國的驕傲",
+        "views": 6514,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "Bounded Ratio Reinforcement Learning",
+        "url": "http://arxiv.org/abs/2604.18578v1",
+        "authors": [
+          "Yunke Ao",
+          "Le Chen"
+        ],
+        "abstract": "Proximal Policy Optimization (PPO) has become the predominant algorithm for on-policy reinforcement learning due to its scalability and empirical robustness across domains. However, there is a significant disconnect between the underlying foundations of trust region methods and the heuristic clipped"
+      },
+      {
+        "title": "MultiWorld: Scalable Multi-Agent Multi-View Video World Models",
+        "url": "http://arxiv.org/abs/2604.18564v1",
+        "authors": [
+          "Haoyu Wu",
+          "Jiwen Yu"
+        ],
+        "abstract": "Video world models have achieved remarkable success in simulating environmental dynamics in response to actions by users or agents. They are modeled as action-conditioned video generation models that take historical frames and current actions as input to predict future frames. Yet, most existing app"
+      },
+      {
+        "title": "Using large language models for embodied planning introduces systematic safety risks",
+        "url": "http://arxiv.org/abs/2604.18463v1",
+        "authors": [
+          "Tao Zhang",
+          "Kaixian Qu"
+        ],
+        "abstract": "Large language models are increasingly used as planners for robotic systems, yet how safely they plan remains an open question. To evaluate safe planning systematically, we introduce DESPITE, a benchmark of 12,279 tasks spanning physical and normative dangers with fully deterministic validation. Acr"
+      },
+      {
+        "title": "ESsEN: Training Compact Discriminative Vision-Language Transformers in a Low-Resource Setting",
+        "url": "http://arxiv.org/abs/2604.18452v1",
+        "authors": [
+          "Clayton Fields",
+          "Casey Kennington"
+        ],
+        "abstract": "Vision-language modeling is rapidly increasing in popularity with an ever expanding list of available models. In most cases, these vision-language models have parameters in the tens of billions, which is necessary for some needs, but in many cases smaller models are necessary (e.g., on edge devices "
+      },
+      {
+        "title": "Benchmarking System Dynamics AI Assistants: Cloud Versus Local LLMs on CLD Extraction and Discussion",
+        "url": "http://arxiv.org/abs/2604.18566v1",
+        "authors": [
+          "Terry Leitch"
+        ],
+        "abstract": "We present a systematic evaluation of large language model families -- spanning both proprietary cloud APIs and locally-hosted open-source models -- on two purpose-built benchmarks for System Dynamics AI assistance: the \\textbf{CLD Leaderboard} (53 tests, structured causal loop diagram extraction) a"
+      },
+      {
+        "title": "SynAgent: Generalizable Cooperative Humanoid Manipulation via Solo-to-Cooperative Agent Synergy",
+        "url": "http://arxiv.org/abs/2604.18557v1",
+        "authors": [
+          "Wei Yao",
+          "Haohan Ma"
+        ],
+        "abstract": "Controllable cooperative humanoid manipulation is a fundamental yet challenging problem for embodied intelligence, due to severe data scarcity, complexities in multi-agent coordination, and limited generalization across objects. In this paper, we present SynAgent, a unified framework that enables sc"
+      },
+      {
+        "title": "Fast and Forgettable: A Controlled Study of Novices' Performance, Learning, Workload, and Emotion in AI-Assisted and Human Pair Programming Paradigms",
+        "url": "http://arxiv.org/abs/2604.18538v1",
+        "authors": [
+          "Nicholas Gardella",
+          "James Prather"
+        ],
+        "abstract": "Code-generating Artificial Intelligence has gained popularity within both professional and educational programming settings over the past several years. While research and pedagogy are beginning to cope with this change, computing students are left to bear the unforeseen consequences of AI amidst a "
+      },
+      {
+        "title": "Agentic Forecasting using Sequential Bayesian Updating of Linguistic Beliefs",
+        "url": "http://arxiv.org/abs/2604.18576v1",
+        "authors": [
+          "Kevin Murphy"
+        ],
+        "abstract": "We present BLF (Bayesian Linguistic Forecaster), an agentic system for binary forecasting that achieves state-of-the-art performance on the ForecastBench benchmark. The system is built on three ideas. (1) A Bayesian linguistic belief state: a semi-structured representation combining numerical probab"
+      }
+    ]
+  },
+  {
     "date": "2026-04-20",
     "summary": "## Research Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight growing interest in **language-guided robot intelligence** and **physical AI systems**. IBM's overview of Physical AI underscores how robots increasingly learn and adapt through real-world interaction. The **Semantic Area Graph Reasoning** paper advances multi-robot coordination using natural language for search tasks, reflecting strong momentum in LLM-robot integration. **AEGIS** addresses a critical challenge in deploying vision-language-action models—preserving prior knowledge during fine-tuning via gradient isolation, essential for versatile embodied agents. **DENALI** contributes low-cost LiDAR datasets for non-line-of-sight spatial reasoning, improving robot perception in occluded environments. Collectively, these works emphasize **scalable perception, language grounding, and continual learning** as central pillars driving next-generation autonomous robotic systems.\n\n*Note: Several sources were unrelated to robotics/AI research and were appropriately deprioritized.*",
     "videos": [
