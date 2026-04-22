@@ -1,5 +1,99 @@
 [
   {
+    "date": "2026-04-22",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances in **human-to-robot policy transfer** and **world modeling**. UniT introduces a unified physical language bridging human demonstrations and humanoid robot learning, while Mask World Model improves robot policy robustness by selectively predicting task-relevant environmental features. Multi-Cycle Spatio-Temporal Adaptation advances human-robot teaming through dynamic collaborative adjustment.\n\nComplementary trends include **spatially-aware generative AI** (CityRAG for city-scale video generation, AnyRecon for arbitrary-view 3D reconstruction) and **multimodal understanding** (A-MAR for fine-grained artwork retrieval). China's emerging humanoid robotics capabilities, highlighted in recent media coverage, underscore accelerating real-world deployment.\n\nOverall, the field is converging toward **generalizable, physically grounded models** enabling robots to learn efficiently from human behavior across diverse environments.",
+    "videos": [
+      {
+        "title": "New AI Robot From China Breaks Human Limits",
+        "url": "https://youtube.com/watch?v=EJbJMg2RNgw",
+        "channel": "AI Revolution",
+        "views": 21734,
+        "priority": 1
+      },
+      {
+        "title": "Gutfeld: They took the bait…",
+        "url": "https://youtube.com/watch?v=P6eV8yHJzB4",
+        "channel": "Fox News",
+        "views": 392938,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "CityRAG: Stepping Into a City via Spatially-Grounded Video Generation",
+        "url": "http://arxiv.org/abs/2604.19741v1",
+        "authors": [
+          "Gene Chou",
+          "Charles Herrmann"
+        ],
+        "abstract": "We address the problem of generating a 3D-consistent, navigable environment that is spatially grounded: a simulation of a real location. Existing video generative models can produce a plausible sequence that is consistent with a text (T2V) or image (I2V) prompt. However, the capability to reconstruc"
+      },
+      {
+        "title": "UniT: Toward a Unified Physical Language for Human-to-Humanoid Policy Learning and World Modeling",
+        "url": "http://arxiv.org/abs/2604.19734v1",
+        "authors": [
+          "Boyu Chen",
+          "Yi Chen"
+        ],
+        "abstract": "Scaling humanoid foundation models is bottlenecked by the scarcity of robotic data. While massive egocentric human data offers a scalable alternative, bridging the cross-embodiment chasm remains a fundamental challenge due to kinematic mismatches. We introduce UniT (Unified Latent Action Tokenizer v"
+      },
+      {
+        "title": "Mask World Model: Predicting What Matters for Robust Robot Policy Learning",
+        "url": "http://arxiv.org/abs/2604.19683v1",
+        "authors": [
+          "Yunfan Lou",
+          "Xiaowei Chi"
+        ],
+        "abstract": "World models derived from large-scale video generative pre-training have emerged as a promising paradigm for generalist robot policy learning. However, standard approaches often focus on high-fidelity RGB video prediction, this can result in overfitting to irrelevant factors, such as dynamic backgro"
+      },
+      {
+        "title": "Multi-Cycle Spatio-Temporal Adaptation in Human-Robot Teaming",
+        "url": "http://arxiv.org/abs/2604.19670v1",
+        "authors": [
+          "Alex Cuellar",
+          "Michael Hagenow"
+        ],
+        "abstract": "Effective human-robot teaming is crucial for the practical deployment of robots in human workspaces. However, optimizing joint human-robot plans remains a challenge due to the difficulty of modeling individualized human capabilities and preferences. While prior research has leveraged the multi-cycle"
+      },
+      {
+        "title": "Tstars-Tryon 1.0: Robust and Realistic Virtual Try-On for Diverse Fashion Items",
+        "url": "http://arxiv.org/abs/2604.19748v1",
+        "authors": [
+          "Mengting Chen",
+          "Zhengrui Chen"
+        ],
+        "abstract": "Recent advances in image generation and editing have opened new opportunities for virtual try-on. However, existing methods still struggle to meet complex real-world demands. We present Tstars-Tryon 1.0, a commercial-scale virtual try-on system that is robust, realistic, versatile, and highly effici"
+      },
+      {
+        "title": "A-MAR: Agent-based Multimodal Art Retrieval for Fine-Grained Artwork Understanding",
+        "url": "http://arxiv.org/abs/2604.19689v1",
+        "authors": [
+          "Shuai Wang",
+          "Hongyi Zhu"
+        ],
+        "abstract": "Understanding artworks requires multi-step reasoning over visual content and cultural, historical, and stylistic context. While recent multimodal large language models show promise in artwork explanation, they rely on implicit reasoning and internalized knowl- edge, limiting interpretability and exp"
+      },
+      {
+        "title": "AnyRecon: Arbitrary-View 3D Reconstruction with Video Diffusion Model",
+        "url": "http://arxiv.org/abs/2604.19747v1",
+        "authors": [
+          "Yutian Chen",
+          "Shi Guo"
+        ],
+        "abstract": "Sparse-view 3D reconstruction is essential for modeling scenes from casual captures, but remain challenging for non-generative reconstruction. Existing diffusion-based approaches mitigates this issues by synthesizing novel views, but they often condition on only one or two capture frames, which rest"
+      },
+      {
+        "title": "Calibration-Induced Systematics in SALT3 Training and Their Impact on Dark Energy Constraints from Stage IV Supernova Surveys",
+        "url": "http://arxiv.org/abs/2604.19746v1",
+        "authors": [
+          "Kene Anumba",
+          "David 0. Jones"
+        ],
+        "abstract": "In the coming years, the Vera Rubin Observatory's Legacy Survey of Space and Time (Rubin-LSST) and the Nancy Grace Roman Space Telescope's (Roman) High Latitude Time Domain Survey (HLTDS) are expected to discover more than a million Type Ia supernovae (SNe Ia), several orders of magnitude more than "
+      }
+    ]
+  },
+  {
     "date": "2026-04-21",
     "summary": "# Quadruped Robotics & Embodied AI: Recent Trends Summary\n\nRecent developments highlight **accelerating progress in legged and humanoid robotics**, exemplified by China's robot marathon showcasing dramatic locomotion improvements—from stumbling to 10 meters/second in one year—drawing global attention. OpenClaw AI demonstrates accessible robotic manipulation through AI-controlled systems.\n\nOn the research front, **cooperative manipulation** advances via SynAgent's solo-to-cooperative humanoid framework, while **LLM-based embodied planning** faces scrutiny over systematic safety risks. MultiWorld's scalable multi-agent video world models offer promising infrastructure for robot perception. Bounded Ratio Reinforcement Learning provides theoretical training improvements applicable to locomotion policies.\n\nKey tensions emerge between **rapid capability gains** and **safety/reliability concerns**, particularly as language models increasingly guide physical robot decision-making in real-world deployments.",
     "videos": [
