@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-04-23",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances in **physical robot capabilities and embodied intelligence**. Notably, table tennis-playing robots (Nature video) and Chinese humanoid systems demonstrate robots surpassing human performance benchmarks. On the AI side, **physics-based imitation learning** (DeVI) enables dexterous human-object interaction through synthetic video, while **compact vision-language-action models** (PokeVLA) integrate world knowledge for versatile robot control.\n\nBroader themes include **AI safety and alignment**—AVISE provides security evaluation frameworks, and LaCroix addresses structural pluralistic alignment challenges. **LLM-driven knowledge systems** (ontology construction) and paralinguistic speech generation benchmarks further reflect expanding AI capability frontiers. Together, these works underscore a convergence of **physical dexterity, multimodal reasoning, and responsible deployment** as central priorities in embodied AI research.",
+    "videos": [
+      {
+        "title": "New AI Robot From China Breaks Human Limits",
+        "url": "https://youtube.com/watch?v=EJbJMg2RNgw",
+        "channel": "AI Revolution",
+        "views": 28930,
+        "priority": 1
+      },
+      {
+        "title": "Gutfeld: They took the bait…",
+        "url": "https://youtube.com/watch?v=P6eV8yHJzB4",
+        "channel": "Fox News",
+        "views": 469959,
+        "priority": 1
+      },
+      {
+        "title": "This will bring the end of Putin: dictator &quot;created a monster&quot; in Ukraine that destroys Russian tsar",
+        "url": "https://youtube.com/watch?v=-mVckRmcDHE",
+        "channel": "Kanal13",
+        "views": 6694,
+        "priority": 1
+      },
+      {
+        "title": "This robot can beat you at table tennis",
+        "url": "https://youtube.com/watch?v=EH8kZDc7OLk",
+        "channel": "nature video",
+        "views": 19811,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "DeVI: Physics-based Dexterous Human-Object Interaction via Synthetic Video Imitation",
+        "url": "http://arxiv.org/abs/2604.20841v1",
+        "authors": [
+          "Hyeonwoo Kim",
+          "Jeonghwan Kim"
+        ],
+        "abstract": "Recent advances in video generative models enable the synthesis of realistic human-object interaction videos across a wide range of scenarios and object categories, including complex dexterous manipulations that are difficult to capture with motion capture systems. While the rich interaction knowled"
+      },
+      {
+        "title": "PokeVLA: Empowering Pocket-Sized Vision-Language-Action Model with Comprehensive World Knowledge Guidance",
+        "url": "http://arxiv.org/abs/2604.20834v1",
+        "authors": [
+          "Yupeng Zheng",
+          "Xiang Li"
+        ],
+        "abstract": "Recent advances in Vision-Language-Action (VLA) models have opened new avenues for robot manipulation, yet existing methods exhibit limited efficiency and a lack of high-level knowledge and spatial awareness. To address these challenges, we propose PokeVLA, a lightweight yet powerful foundation mode"
+      },
+      {
+        "title": "A Hough transform approach to safety-aware scalar field mapping using Gaussian Processes",
+        "url": "http://arxiv.org/abs/2604.20799v1",
+        "authors": [
+          "Muzaffar Qureshi",
+          "Trivikram Satharasi"
+        ],
+        "abstract": "This paper presents a framework for mapping unknown scalar fields using a sensor-equipped autonomous robot operating in unsafe environments. The unsafe regions are defined as regions of high-intensity, where the field value exceeds a predefined safety threshold. For safe and efficient mapping of the"
+      },
+      {
+        "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
+        "url": "http://arxiv.org/abs/2604.20795v1",
+        "authors": [
+          "Pavel Salovskii",
+          "Iuliia Gorshkova"
+        ],
+        "abstract": "This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer. Instead of relying solely on parametric knowledge and vector-based retrieval (RAG), the proposed approach constructs and maintains a structu"
+      },
+      {
+        "title": "AVISE: Framework for Evaluating the Security of AI Systems",
+        "url": "http://arxiv.org/abs/2604.20833v1",
+        "authors": [
+          "Mikko Lempinen",
+          "Joni Kemppainen"
+        ],
+        "abstract": "As artificial intelligence (AI) systems are increasingly deployed across critical domains, their security vulnerabilities pose growing risks of high-profile exploits and consequential system failures. Yet systematic approaches to evaluating AI security remain underdeveloped. In this paper, we introd"
+      },
+      {
+        "title": "Relative Principals, Pluralistic Alignment, and the Structural Value Alignment Problem",
+        "url": "http://arxiv.org/abs/2604.20805v1",
+        "authors": [
+          "Travis LaCroix"
+        ],
+        "abstract": "The value alignment problem for artificial intelligence (AI) is often framed as a purely technical or normative challenge, sometimes focused on hypothetical future systems. I argue that the problem is better understood as a structural question about governance: not whether an AI system is aligned in"
+      },
+      {
+        "title": "SpeechParaling-Bench: A Comprehensive Benchmark for Paralinguistic-Aware Speech Generation",
+        "url": "http://arxiv.org/abs/2604.20842v1",
+        "authors": [
+          "Ruohan Liu",
+          "Shukang Yin"
+        ],
+        "abstract": "Paralinguistic cues are essential for natural human-computer interaction, yet their evaluation in Large Audio-Language Models (LALMs) remains limited by coarse feature coverage and the inherent subjectivity of assessment. To address these challenges, we introduce SpeechParaling-Bench, a comprehensiv"
+      },
+      {
+        "title": "Laser electro-optic frequency comb in lithium niobate nanophotonics",
+        "url": "http://arxiv.org/abs/2604.20837v1",
+        "authors": [
+          "Benjamin K. Gutierrez",
+          "Yingchu Xu"
+        ],
+        "abstract": "Optical frequency combs have revolutionized precision science and technology, yet their nanophotonic implementations have failed to simultaneously achieve high efficiency, power, and coherence. Optically driven microcombs provide broad and stable spectra but low usable power, whereas active comb gen"
+      }
+    ]
+  },
+  {
     "date": "2026-04-22",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent research highlights significant advances in **human-to-robot policy transfer** and **world modeling**. UniT introduces a unified physical language bridging human demonstrations and humanoid robot learning, while Mask World Model improves robot policy robustness by selectively predicting task-relevant environmental features. Multi-Cycle Spatio-Temporal Adaptation advances human-robot teaming through dynamic collaborative adjustment.\n\nComplementary trends include **spatially-aware generative AI** (CityRAG for city-scale video generation, AnyRecon for arbitrary-view 3D reconstruction) and **multimodal understanding** (A-MAR for fine-grained artwork retrieval). China's emerging humanoid robotics capabilities, highlighted in recent media coverage, underscore accelerating real-world deployment.\n\nOverall, the field is converging toward **generalizable, physically grounded models** enabling robots to learn efficiently from human behavior across diverse environments.",
     "videos": [
