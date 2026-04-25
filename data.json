@@ -1,5 +1,119 @@
 [
   {
+    "date": "2026-04-25",
+    "summary": "# Quadruped Robotics & Embodied AI: Recent Trends Summary\n\nRecent developments highlight rapid advances in **robot manipulation and planning**. Trace-conditioned VLA planning enables long-horizon manipulation tasks, while VistaBot addresses view-robust manipulation through spatiotemporal-aware synthesis. Hi-WM leverages human-in-the-loop world models for scalable robot post-training, reducing data bottlenecks.\n\nOn the **physical platform** side, videos showcase China's humanoid robots pushing biomechanical limits, a table-tennis-playing robot demonstrating real-time dexterous skill, and notably, Turkey's Roketsan deploying a **missile-launching quadruped (KOZ)**, signaling growing militarization of legged robots.\n\n**Multi-robot co-design** research advances task-driven heterogeneous system optimization, while temporal video understanding improves robot perception pipelines.\n\nOverall, the field is converging toward **generalizable, long-horizon, view-robust manipulation** with increasingly capable and concerning real-world deployments.",
+    "videos": [
+      {
+        "title": "New AI Robot From China Breaks Human Limits",
+        "url": "https://youtube.com/watch?v=EJbJMg2RNgw",
+        "channel": "AI Revolution",
+        "views": 35416,
+        "priority": 1
+      },
+      {
+        "title": "Gutfeld: They took the bait…",
+        "url": "https://youtube.com/watch?v=P6eV8yHJzB4",
+        "channel": "Fox News",
+        "views": 523311,
+        "priority": 1
+      },
+      {
+        "title": "Dünyada Bir İlk: Roketsan’ın Füze Atan Robot Köpeği KOZ ve METE Füzesi! 🇹🇷",
+        "url": "https://youtube.com/watch?v=JRx4bhu2JWw",
+        "channel": "Oğuzhan Atik",
+        "views": 34524,
+        "priority": 1
+      },
+      {
+        "title": "This will bring the end of Putin: dictator &quot;created a monster&quot; in Ukraine that destroys Russian tsar",
+        "url": "https://youtube.com/watch?v=-mVckRmcDHE",
+        "channel": "Kanal13",
+        "views": 8694,
+        "priority": 1
+      },
+      {
+        "title": "This robot can beat you at table tennis",
+        "url": "https://youtube.com/watch?v=EH8kZDc7OLk",
+        "channel": "nature video",
+        "views": 96079,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "Long-Horizon Manipulation via Trace-Conditioned VLA Planning",
+        "url": "http://arxiv.org/abs/2604.21924v1",
+        "authors": [
+          "Isabella Liu",
+          "An-Chieh Cheng"
+        ],
+        "abstract": "Long-horizon manipulation remains challenging for vision-language-action (VLA) policies: real tasks are multi-step, progress-dependent, and brittle to compounding execution errors. We present LoHo-Manip, a modular framework that scales short-horizon VLA execution to long-horizon instruction followin"
+      },
+      {
+        "title": "VistaBot: View-Robust Robot Manipulation via Spatiotemporal-Aware View Synthesis",
+        "url": "http://arxiv.org/abs/2604.21914v1",
+        "authors": [
+          "Songen Gu",
+          "Yuhang Zheng"
+        ],
+        "abstract": "Recently, end-to-end robotic manipulation models have gained significant attention for their generalizability and scalability. However, they often suffer from limited robustness to camera viewpoint changes when training with a fixed camera. In this paper, we propose VistaBot, a novel framework that "
+      },
+      {
+        "title": "Task-Driven Co-Design of Heterogeneous Multi-Robot Systems",
+        "url": "http://arxiv.org/abs/2604.21894v1",
+        "authors": [
+          "Maximilian Stralz",
+          "Meshal Alharbi"
+        ],
+        "abstract": "Designing multi-agent robotic systems requires reasoning across tightly coupled decisions spanning heterogeneous domains, including robot design, fleet composition, and planning. Much effort has been devoted to isolated improvements in these domains, whereas system-level co-design considering trade-"
+      },
+      {
+        "title": "Hi-WM: Human-in-the-World-Model for Scalable Robot Post-Training",
+        "url": "http://arxiv.org/abs/2604.21741v1",
+        "authors": [
+          "Yaxuan Li",
+          "Zhongyi Zhou"
+        ],
+        "abstract": "Post-training is essential for turning pretrained generalist robot policies into reliable task-specific controllers, but existing human-in-the-loop pipelines remain tied to physical execution: each correction requires robot time, scene setup, resets, and operator supervision in the real world. Meanw"
+      },
+      {
+        "title": "CrossCommitVuln-Bench: A Dataset of Multi-Commit Python Vulnerabilities Invisible to Per-Commit Static Analysis",
+        "url": "http://arxiv.org/abs/2604.21917v1",
+        "authors": [
+          "Arunabh Majumdar"
+        ],
+        "abstract": "We present CrossCommitVuln-Bench, a curated benchmark of 15 real-world Python vulnerabilities (CVEs) in which the exploitable condition was introduced across multiple commits - each individually benign to per-commit static analysis - but collectively critical. We manually annotate each CVE with its "
+      },
+      {
+        "title": "From Research Question to Scientific Workflow: Leveraging Agentic AI for Science Automation",
+        "url": "http://arxiv.org/abs/2604.21910v1",
+        "authors": [
+          "Bartosz Balis",
+          "Michal Orzechowski"
+        ],
+        "abstract": "Scientific workflow systems automate execution -- scheduling, fault tolerance, resource management -- but not the semantic translation that precedes it. Scientists still manually convert research questions into workflow specifications, a task requiring both domain knowledge and infrastructure expert"
+      },
+      {
+        "title": "Seeing Fast and Slow: Learning the Flow of Time in Videos",
+        "url": "http://arxiv.org/abs/2604.21931v1",
+        "authors": [
+          "Yen-Siang Wu",
+          "Rundong Luo"
+        ],
+        "abstract": "How can we tell whether a video has been sped up or slowed down? How can we generate videos at different speeds? Although videos have been central to modern computer vision research, little attention has been paid to perceiving and controlling the passage of time. In this paper, we study time as a l"
+      },
+      {
+        "title": "Algorithmic Locality via Provable Convergence in Quantum Tensor Networks",
+        "url": "http://arxiv.org/abs/2604.21919v1",
+        "authors": [
+          "Siddhant Midha",
+          "Yifan F. Zhang"
+        ],
+        "abstract": "Belief propagation has recently emerged as a powerful framework for evaluating tensor networks in higher dimensions, combining computational efficiency with provable analytical guarantees. In this work, we develop the first end-to-end theory of tensor network belief propagation for a class of projec"
+      }
+    ]
+  },
+  {
     "date": "2026-04-24",
     "summary": "# Quadruped Robotics & Embodied AI: Key Trends Summary\n\nRecent developments highlight rapid advances in **robot manipulation and autonomy**. Vision-language-action (VLA) models are gaining traction, with trace-conditioned planning enabling long-horizon manipulation tasks, while VistaBot addresses view-robust manipulation through spatiotemporal-aware synthesis. Human-in-the-loop post-training (Hi-WM) is emerging as a scalable strategy for improving robot policies using human world models.\n\nOn the hardware frontier, notable demonstrations include a **missile-launching quadruped robot dog** (Turkey's KOZ/METE) and a robot defeating humans at table tennis, signaling expanding physical capabilities. **Task-driven co-design** frameworks for heterogeneous multi-robot systems reflect growing interest in optimizing robot morphology alongside behavior.\n\nTogether, these trends underscore a convergence of **generalist manipulation policies, multi-robot coordination, and militarized quadruped platforms** as defining directions in embodied AI research.",
     "videos": [
