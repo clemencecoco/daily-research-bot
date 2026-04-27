@@ -1,5 +1,126 @@
 [
   {
+    "date": "2026-04-27",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight **rapid advances in robotic capabilities and real-world deployment**. Chinese humanoid robots are gaining prominence, targeting household tasks and surpassing human performance benchmarks. Militarized quadrupeds—notably Turkey's Roketsan missile-launching robot dog—signal growing **defense applications** of legged systems.\n\nOn the research front, key themes include **goal-conditioned imitation learning** (GCImOpt), **gaze-guided robotic manipulation** (GazeVLA), and **diverse trajectory exploration** for articulated object handling (QDTraj), collectively pushing dexterous manipulation forward. **Agentic world modeling** and compositional multi-objective co-design frameworks suggest a move toward more generalizable, autonomous robot reasoning.\n\nOverall, the field is converging on **embodied intelligence**—combining perception, intention understanding, and efficient policy learning—to bridge laboratory research with practical, real-world robotic deployment.",
+    "videos": [
+      {
+        "title": "New AI Robot From China Breaks Human Limits",
+        "url": "https://youtube.com/watch?v=EJbJMg2RNgw",
+        "channel": "AI Revolution",
+        "views": 37538,
+        "priority": 1
+      },
+      {
+        "title": "This New Chinese Humanoid Robot Wants to Do Your Household Chores",
+        "url": "https://youtube.com/watch?v=JpeuQS40CHw",
+        "channel": "Rafa Goes Around!",
+        "views": 10791,
+        "priority": 1
+      },
+      {
+        "title": "Robot Smashes Human World Record, Signaling Big Changes",
+        "url": "https://youtube.com/watch?v=zw9LAjm9pso",
+        "channel": "CNET",
+        "views": 6231,
+        "priority": 1
+      },
+      {
+        "title": "Gutfeld: They took the bait…",
+        "url": "https://youtube.com/watch?v=P6eV8yHJzB4",
+        "channel": "Fox News",
+        "views": 557621,
+        "priority": 1
+      },
+      {
+        "title": "Dünyada Bir İlk: Roketsan’ın Füze Atan Robot Köpeği KOZ ve METE Füzesi! 🇹🇷",
+        "url": "https://youtube.com/watch?v=JRx4bhu2JWw",
+        "channel": "Oğuzhan Atik",
+        "views": 50765,
+        "priority": 1
+      },
+      {
+        "title": "This will bring the end of Putin: dictator &quot;created a monster&quot; in Ukraine that destroys Russian tsar",
+        "url": "https://youtube.com/watch?v=-mVckRmcDHE",
+        "channel": "Kanal13",
+        "views": 8932,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "GCImOpt: Learning efficient goal-conditioned policies by imitating optimal trajectories",
+        "url": "http://arxiv.org/abs/2604.22724v1",
+        "authors": [
+          "Jon Goikoetxea",
+          "Jesús F. Palacián"
+        ],
+        "abstract": "Imitation learning is a well-established approach for machine-learning-based control. However, its applicability depends on having access to demonstrations, which are often expensive to collect and/or suboptimal for solving the task. In this work, we present GCImOpt, an approach to learn efficient g"
+      },
+      {
+        "title": "Compositional Online Learning for Multi-Objective System Co-Design",
+        "url": "http://arxiv.org/abs/2604.22624v1",
+        "authors": [
+          "Meshal Alharbi",
+          "Munther A. Dahleh"
+        ],
+        "abstract": "Many engineered systems must balance competing objectives, such as performance and safety, cost and reliability, or efficiency and sustainability, and are naturally modeled as compositions of interacting subsystems. We study online multi-objective decision-making in monotone co-design, where functio"
+      },
+      {
+        "title": "GazeVLA: Learning Human Intention for Robotic Manipulation",
+        "url": "http://arxiv.org/abs/2604.22615v1",
+        "authors": [
+          "Chengyang Li",
+          "Kaiyi Xiong"
+        ],
+        "abstract": "Embodied foundation models have achieved significant breakthroughs in robotic manipulation, yet they still depend heavily on large-scale robot demonstrations. Although recent works have explored leveraging human data to alleviate this dependency, effectively extracting transferable knowledge remains"
+      },
+      {
+        "title": "QDTraj: Exploration of Diverse Trajectory Primitives for Articulated Objects Robotic Manipulation",
+        "url": "http://arxiv.org/abs/2604.22551v1",
+        "authors": [
+          "Mathilde Kappel",
+          "Mahdi Khoramshahi"
+        ],
+        "abstract": "Thanks to the latest advances in learning and robotics, domestic robots are beginning to enter homes, aiming to execute household chores autonomously. However, robots still struggle to perform autonomous manipulation tasks in open-ended environments. In this context, this paper presents a method tha"
+      },
+      {
+        "title": "How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks",
+        "url": "http://arxiv.org/abs/2604.22750v1",
+        "authors": [
+          "Longju Bai",
+          "Zhemin Huang"
+        ],
+        "abstract": "The wide adoption of AI agents in complex human workflows is driving rapid growth in LLM token consumption. When agents are deployed on tasks that require a significant amount of tokens, three questions naturally arise: (1) Where do AI agents spend the tokens? (2) Which models are more token-efficie"
+      },
+      {
+        "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+        "url": "http://arxiv.org/abs/2604.22748v1",
+        "authors": [
+          "Meng Chu",
+          "Xuan Billy Zhang"
+        ],
+        "abstract": "As AI systems move from generating text to accomplishing goals through sustained interaction, the ability to model environment dynamics becomes a central bottleneck. Agents that manipulate objects, navigate software, coordinate with others, or design experiments require predictive environment models"
+      },
+      {
+        "title": "Code for All: Educational Applications of the \"Vibe Coding\" Hackathon in Programming Education across All Skill Levels",
+        "url": "http://arxiv.org/abs/2604.22747v1",
+        "authors": [
+          "Ashley J. Chen",
+          "Yijia Cao"
+        ],
+        "abstract": "The emergence of large language models has enabled vibe coding, a natural language approach to programming in which users describe intent and AI generates or revises code, potentially broadening access to programming while preserving meaningful learning outcomes. We investigate its educational value"
+      },
+      {
+        "title": "Relaxation-Informed Training of Neural Network Surrogate Models",
+        "url": "http://arxiv.org/abs/2604.22746v1",
+        "authors": [
+          "Calvin Tsay"
+        ],
+        "abstract": "ReLU neural networks trained as surrogate models can be embedded exactly in mixed-integer linear programs (MILPs), enabling global optimization over the learned function. The tractability of the resulting MILP depends on structural properties of the network, i.e., the number of binary variables in a"
+      }
+    ]
+  },
+  {
     "date": "2026-04-26",
     "summary": "# Quadruped Robotics & Embodied AI: Recent Trends Summary\n\nRecent developments highlight rapid advances across robot manipulation, autonomy, and militarization. Chinese humanoid robots are demonstrating superhuman physical capabilities, while Kalil 4.0 exemplifies how geopolitical pressures accelerated domestic AI robotics innovation. Notably, Turkey's Roketsan unveiled a missile-armed quadruped (KOZ), signaling growing weaponization of legged robots.\n\nOn the research front, key themes include **long-horizon planning** (Trace-Conditioned VLA), **view-robust manipulation** (VistaBot), and **scalable robot learning from human demonstrations** (Hi-WM). Task-driven co-design frameworks are emerging for heterogeneous multi-robot systems. Meanwhile, nature-inspired dexterous robots achieved competitive table tennis performance, underscoring real-world agility milestones.\n\nOverall, the field is converging toward generalizable, deployable robots—with increasing attention to geopolitical and military applications raising important ethical considerations.",
     "videos": [
