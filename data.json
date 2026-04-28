@@ -1,5 +1,98 @@
 [
   {
+    "date": "2026-04-28",
+    "summary": "# Quadruped Robotics & Embodied AI Research Trends Summary\n\nBased on the provided sources, **direct quadruped robotics content is limited**, but relevant trends emerge:\n\n**Robot Autonomy & Control:** CNET highlights accelerating commercial robot deployment across industries. The differential flatness paper advances **learning-based MPC for constrained multi-input systems**, directly applicable to legged robot locomotion efficiency. SpecRLBench addresses **generalization in reinforcement learning** — critical for robust quadruped policy transfer across environments.\n\n**Perception & Navigation:** The RGB-D Visual SLAM work improves **passage-aware structural mapping**, enhancing indoor navigation for mobile robots including quadrupeds.\n\n**Simulation & World Models:** VEHRON's configuration-driven simulation framework and World-R1's 3D-constrained video generation suggest growing investment in **physics-grounded simulation** for embodied AI training pipelines.\n\n*Note: Several provided sources fall outside quadruped/embodied AI scope and were not incorporated.*",
+    "videos": [
+      {
+        "title": "The Pivot to Robots Has Already Begun | What The Future",
+        "url": "https://youtube.com/watch?v=zw9LAjm9pso",
+        "channel": "CNET",
+        "views": 10497,
+        "priority": 1
+      },
+      {
+        "title": "This will bring the end of Putin: dictator &quot;created a monster&quot; in Ukraine that destroys Russian tsar",
+        "url": "https://youtube.com/watch?v=-mVckRmcDHE",
+        "channel": "Kanal13",
+        "views": 8949,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "CAbLECAR: efficiently scheduling QLDPC codes on a tileable spin qubit chip with shuttling",
+        "url": "http://arxiv.org/abs/2604.24739v1",
+        "authors": [
+          "Jason D. Chadwick",
+          "Frederic T. Chong"
+        ],
+        "abstract": "Semiconductor spin qubits are a promising platform for large-scale quantum computing, but have yet to take full advantage of the broad class of quantum low-density parity check (QLDPC) codes, which promise high encoding rates and efficient logic but require nonlocal connectivity between physical qub"
+      },
+      {
+        "title": "SpecRLBench: A Benchmark for Generalization in Specification-Guided Reinforcement Learning",
+        "url": "http://arxiv.org/abs/2604.24729v1",
+        "authors": [
+          "Zijian Guo",
+          "İlker Işık"
+        ],
+        "abstract": "Specification-guided reinforcement learning (RL) provides a principled framework for encoding complex, temporally extended tasks using formal specifications such as linear temporal logic (LTL). While recent methods have shown promising results, their ability to generalize across unseen specification"
+      },
+      {
+        "title": "Passage-Aware Structural Mapping for RGB-D Visual SLAM",
+        "url": "http://arxiv.org/abs/2604.24707v1",
+        "authors": [
+          "Ali Tourani",
+          "Miguel Fernandez-Cortizas"
+        ],
+        "abstract": "Doorways and passages are critical structural elements for indoor robot navigation, yet they remain underexplored in modern Visual SLAM (VSLAM) frameworks. This paper presents a passage-aware structural mapping approach for RGB-D VSLAM that detects doors and traversable openings by jointly fusing ge"
+      },
+      {
+        "title": "Exploiting Differential Flatness for Efficient Learning-based Model Predictive Control of Constrained Multi-Input Control Affine Systems",
+        "url": "http://arxiv.org/abs/2604.24706v1",
+        "authors": [
+          "Tobias A. Farger",
+          "Adam W. Hall"
+        ],
+        "abstract": "Learning-based control techniques use data from past trajectories to control systems with uncertain dynamics. However, learning-based controllers are often computationally inefficient, limiting their practicality. To address this limitation, we propose a learning-based controller that exploits diffe"
+      },
+      {
+        "title": "Case-Specific Rubrics for Clinical AI Evaluation: Methodology, Validation, and LLM-Clinician Agreement Across 823 Encounters",
+        "url": "http://arxiv.org/abs/2604.24710v1",
+        "authors": [
+          "Aaryan Shah",
+          "Andrew Hines"
+        ],
+        "abstract": "Objective. Clinical AI documentation systems require evaluation methodologies that are clinically valid, economically viable, and sensitive to iterative changes. Methods requiring expert review per scoring instance are too slow and expensive for safe, iterative deployment. We present a case-specific"
+      },
+      {
+        "title": "Partial extended b-metric and some fixed point theorem",
+        "url": "http://arxiv.org/abs/2604.24728v1",
+        "authors": [
+          "Muhamad Abdillah Ahen",
+          "Ivan Hadinata"
+        ],
+        "abstract": "In this paper, we introduce the concept of partial extended b-metric spaces (PEBMS) as a unification and generalization of extended b-metric spaces and partial b-metric spaces. This new structure incorporates a point-dependent control function together with the possibility of non-zero self-distance,"
+      },
+      {
+        "title": "VEHRON: A Configuration-Driven BEV Simulation Framework for Subsystem-Level Studies",
+        "url": "http://arxiv.org/abs/2604.24726v1",
+        "authors": [
+          "Subramanyam Natarajan"
+        ],
+        "abstract": "In practical early-stage battery-electric vehicle studies, analysis workflows may become fragmented across spreadsheets, notebooks, and project-specific scripts, making reuse, audit, and extension harder. VEHRON is an open-source Python framework for a deterministic, traceable workflow built around "
+      },
+      {
+        "title": "World-R1: Reinforcing 3D Constraints for Text-to-Video Generation",
+        "url": "http://arxiv.org/abs/2604.24764v1",
+        "authors": [
+          "Weijie Wang",
+          "Xiaoxuan He"
+        ],
+        "abstract": "Recent video foundation models demonstrate impressive visual synthesis but frequently suffer from geometric inconsistencies. While existing methods attempt to inject 3D priors via architectural modifications, they often incur high computational costs and limit scalability. We propose World-R1, a fra"
+      }
+    ]
+  },
+  {
     "date": "2026-04-27",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight **rapid advances in robotic capabilities and real-world deployment**. Chinese humanoid robots are gaining prominence, targeting household tasks and surpassing human performance benchmarks. Militarized quadrupeds—notably Turkey's Roketsan missile-launching robot dog—signal growing **defense applications** of legged systems.\n\nOn the research front, key themes include **goal-conditioned imitation learning** (GCImOpt), **gaze-guided robotic manipulation** (GazeVLA), and **diverse trajectory exploration** for articulated object handling (QDTraj), collectively pushing dexterous manipulation forward. **Agentic world modeling** and compositional multi-objective co-design frameworks suggest a move toward more generalizable, autonomous robot reasoning.\n\nOverall, the field is converging on **embodied intelligence**—combining perception, intention understanding, and efficient policy learning—to bridge laboratory research with practical, real-world robotic deployment.",
     "videos": [
