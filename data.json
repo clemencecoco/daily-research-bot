@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026-04-29",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight accelerating progress across robot dexterity, learning, and reliability. **Sony's ace robot** defeating professional table tennis players demonstrates remarkable real-world physical precision, while **Chinese humanoid robots** targeting household tasks signal commercial embodied AI momentum.\n\nOn the research front, **KinDER** introduces a physical reasoning benchmark advancing robot planning capabilities, and **variational neural belief parameterizations** improve dexterous grasping under real-world uncertainty—critical for manipulation tasks. **TSN-Affinity** addresses continual offline reinforcement learning through parameter reuse, enabling robots to adapt across tasks without catastrophic forgetting. **Scenario-based system testing** frameworks strengthen reliability for distributed robotics deployments.\n\nTogether, these trends underscore a field rapidly bridging **sim-to-real gaps**, improving **adaptive learning**, and pushing robots toward genuine household and industrial utility.",
+    "videos": [
+      {
+        "title": "This New Chinese Humanoid Robot Wants to Do Your Household Chores",
+        "url": "https://youtube.com/watch?v=JpeuQS40CHw",
+        "channel": "Rafa Goes Around!",
+        "views": 31062,
+        "priority": 1
+      },
+      {
+        "title": "The Pivot to Robots Has Already Begun | What The Future",
+        "url": "https://youtube.com/watch?v=zw9LAjm9pso",
+        "channel": "CNET",
+        "views": 12689,
+        "priority": 1
+      },
+      {
+        "title": "This will bring the end of Putin: dictator &quot;created a monster&quot; in Ukraine that destroys Russian tsar",
+        "url": "https://youtube.com/watch?v=-mVckRmcDHE",
+        "channel": "Kanal13",
+        "views": 8952,
+        "priority": 1
+      },
+      {
+        "title": "Sony’s Ace Robot Beats Top Table Tennis Pros in Real Matches",
+        "url": "https://youtube.com/watch?v=VVEzgYxDdrc",
+        "channel": "Global Update",
+        "views": 32863,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "TSN-Affinity: Similarity-Driven Parameter Reuse for Continual Offline Reinforcement Learning",
+        "url": "http://arxiv.org/abs/2604.25898v1",
+        "authors": [
+          "Dominik Żurek",
+          "Kamil Faber"
+        ],
+        "abstract": "Continual offline reinforcement learning (CORL) aims to learn a sequence of tasks from datasets collected over time while preserving performance on previously learned tasks. This setting corresponds to domains where new tasks arise over time, but adapting the model in live environment interactions i"
+      },
+      {
+        "title": "Variational Neural Belief Parameterizations for Robust Dexterous Grasping under Multimodal Uncertainty",
+        "url": "http://arxiv.org/abs/2604.25897v1",
+        "authors": [
+          "Clinton Enwerem",
+          "Shreya Kalyanaraman"
+        ],
+        "abstract": "Contact variability, sensing uncertainty, and external disturbances make grasp execution stochastic. Expected-quality objectives ignore tail outcomes and often select grasps that fail under adverse contact realizations. Risk-sensitive POMDPs address this failure mode, but many use particle-filter be"
+      },
+      {
+        "title": "KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning",
+        "url": "http://arxiv.org/abs/2604.25788v1",
+        "authors": [
+          "Yixuan Huang",
+          "Bowen Li"
+        ],
+        "abstract": "Robotic systems that interact with the physical world must reason about kinematic and dynamic constraints imposed by their own embodiment, their environment, and the task at hand. We introduce KinDER, a benchmark for Kinematic and Dynamic Embodied Reasoning that targets physical reasoning challenges"
+      },
+      {
+        "title": "Scenario-based System Testing for Distributed Robotics Applications",
+        "url": "http://arxiv.org/abs/2604.25772v1",
+        "authors": [
+          "Jan Peleska",
+          "Felix Brüning"
+        ],
+        "abstract": "We present the SCenario Specification Language (SCSL) for automated generation and execution of system-level tests. SCSL targets complex distributed systems (e.g., collaborating autonomous robots) where classical model-based testing becomes impractical because (1) the overall system complexity is to"
+      },
+      {
+        "title": "A paradox of AI fluency",
+        "url": "http://arxiv.org/abs/2604.25905v1",
+        "authors": [
+          "Christopher Potts",
+          "Moritz Sudhof"
+        ],
+        "abstract": "How much does a user's skill with AI shape what AI actually delivers for them? This question is critical for users, AI product builders, and society at large, but it remains underexplored. Using a richly annotated sample of 27K transcripts from WildChat-4.8M, we show that fluent users take on more c"
+      },
+      {
+        "title": "Carbon-Taxed Transformers: A Green Compression Pipeline for Overgrown Language Models",
+        "url": "http://arxiv.org/abs/2604.25903v1",
+        "authors": [
+          "Ajmain Inqiad Alam",
+          "Palash Roy"
+        ],
+        "abstract": "The accelerating adoption of Large Language Models (LLMs) in software engineering (SE) has brought with it a silent crisis: unsustainable computational cost. While these models demonstrate remarkable capabilities in different SE tasks, they are unmanageably large, slow to deploy, memory-intensive, a"
+      },
+      {
+        "title": "$H^2$ Stabilization of the $2$-D and $3$-D Heat Equation via Modal Decomposition",
+        "url": "http://arxiv.org/abs/2604.25909v1",
+        "authors": [
+          "Mohamed Amine Ouchdiri",
+          "Mohamed-Camil Belhadjoudja"
+        ],
+        "abstract": "Boundary controllers have been recently proposed in the literature, via modal decomposition, to achieve $H^1$ stabilization of linear parabolic equations in two and three dimensions. In one dimension ($1$-D), $H^1$ exponential stability is known to imply boundedness and asymptotic convergence of the"
+      },
+      {
+        "title": "Pythia: Toward Predictability-Driven Agent-Native LLM Serving",
+        "url": "http://arxiv.org/abs/2604.25899v1",
+        "authors": [
+          "Shan Yu",
+          "Junyi Shu"
+        ],
+        "abstract": "As LLM applications grow more complex, developers are increasingly adopting multi-agent architectures to decompose workflows into specialized, collaborative components, introducing structure that constrains agent behavior and exposes useful semantic predictability. Unlike traditional LLM serving, wh"
+      }
+    ]
+  },
+  {
     "date": "2026-04-28",
     "summary": "# Quadruped Robotics & Embodied AI Research Trends Summary\n\nBased on the provided sources, **direct quadruped robotics content is limited**, but relevant trends emerge:\n\n**Robot Autonomy & Control:** CNET highlights accelerating commercial robot deployment across industries. The differential flatness paper advances **learning-based MPC for constrained multi-input systems**, directly applicable to legged robot locomotion efficiency. SpecRLBench addresses **generalization in reinforcement learning** — critical for robust quadruped policy transfer across environments.\n\n**Perception & Navigation:** The RGB-D Visual SLAM work improves **passage-aware structural mapping**, enhancing indoor navigation for mobile robots including quadrupeds.\n\n**Simulation & World Models:** VEHRON's configuration-driven simulation framework and World-R1's 3D-constrained video generation suggest growing investment in **physics-grounded simulation** for embodied AI training pipelines.\n\n*Note: Several provided sources fall outside quadruped/embodied AI scope and were not incorporated.*",
     "videos": [
