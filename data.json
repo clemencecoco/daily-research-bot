@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-04-30",
+    "summary": "# Key Trends in Quadruped & Embodied AI Research\n\nRecent developments highlight rapid advances across **humanoid dexterity**, **legged locomotion**, and **robot perception**. Chinese humanoid robots are targeting household tasks, while Unitree's G1 demonstrates agile skating locomotion, and Sony's Ace achieves superhuman table tennis performance — underscoring real-world deployment maturity.\n\nOn the research side, **bi-level optimization** for rope-assisted legged robots addresses complex contact planning, while **NeRF-based safe navigation** via reachable sets improves environmental awareness. The **STARRY** framework advances robotic manipulation through spatial-temporal world modeling, and **World2VLM** enhances dynamic spatial reasoning by distilling world model imagination into vision-language models. Novel **origami-inspired grippers** offer universal grasping solutions.\n\nTogether, these trends emphasize closing the gap between simulation-trained policies and robust, adaptive real-world robot deployment.",
+    "videos": [
+      {
+        "title": "This New Chinese Humanoid Robot Wants to Do Your Household Chores",
+        "url": "https://youtube.com/watch?v=JpeuQS40CHw",
+        "channel": "Rafa Goes Around!",
+        "views": 40066,
+        "priority": 1
+      },
+      {
+        "title": "Open Source ESP32 8-Servo Hexapod Robot",
+        "url": "https://youtube.com/watch?v=aGaYgAD-EhY",
+        "channel": "James Bruton",
+        "views": 37451,
+        "priority": 1
+      },
+      {
+        "title": "Unitree&#39;s New G1 Robot Just Learned to Skate Like a Human… This Is NOT CGI",
+        "url": "https://youtube.com/watch?v=BemO2Wz7KZo",
+        "channel": "NextGen Humanoids",
+        "views": 15839,
+        "priority": 1
+      },
+      {
+        "title": "Sony’s Ace Robot Beats Top Table Tennis Pros in Real Matches",
+        "url": "https://youtube.com/watch?v=VVEzgYxDdrc",
+        "channel": "Global Update",
+        "views": 47640,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "Bi-Level Optimization for Contact and Motion Planning in Rope-Assisted Legged Robots",
+        "url": "http://arxiv.org/abs/2604.26910v1",
+        "authors": [
+          "Ruben Malacarne",
+          "Ioannis Tsikelis"
+        ],
+        "abstract": "This paper presents a planning pipeline framework for locomotion in rope-assisted robots climbing vertical surfaces. The proposed framework is formulated as a bi-level optimization scheme that addresses a mixed-integer problem: selecting feasible terrain regions for landing while simultaneously opti"
+      },
+      {
+        "title": "Safe Navigation using Neural Radiance Fields via Reachable Sets",
+        "url": "http://arxiv.org/abs/2604.26899v1",
+        "authors": [
+          "Omanshu Thapliyal",
+          "Malarvizhi Sankaranarayanasamy"
+        ],
+        "abstract": "Safe navigation in cluttered environments is an important challenge for autonomous systems. Robots navigating through obstacle ridden scenarios need to be able to navigate safely in the presence of obstacles, goals, and ego objects of varying geometries. In this work, reachable set representations o"
+      },
+      {
+        "title": "Stochastic Entanglement of Deterministic Origami Tentacles For Universal Robotic Gripping",
+        "url": "http://arxiv.org/abs/2604.26897v1",
+        "authors": [
+          "Alec Boron",
+          "Bokun Zheng"
+        ],
+        "abstract": "Origami-inspired robotic grippers have shown promising potential for object manipulation tasks due to their compact volume and mechanical flexibility. However, robust capture of objects with random shapes in dynamic working environments often comes at the cost of additional actuation channels and co"
+      },
+      {
+        "title": "STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation",
+        "url": "http://arxiv.org/abs/2604.26848v1",
+        "authors": [
+          "Yuxuan Tian",
+          "Yurun Jin"
+        ],
+        "abstract": "Robotic manipulation critically requires reasoning about future spatial-temporal interactions, yet existing VLA policies and world-model-enhanced policies do not fully model action-relevant spatial-temporal interaction structure. We propose STARRY, a world-model-enhanced action-generation policy tha"
+      },
+      {
+        "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
+        "url": "http://arxiv.org/abs/2604.26934v1",
+        "authors": [
+          "Wanyue Zhang",
+          "Wenxiang Wu"
+        ],
+        "abstract": "Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address this limitation either by scaling spatial supervision with synt"
+      },
+      {
+        "title": "Large quantum dot energy level shifts in anomalous photon-assisted tunneling",
+        "url": "http://arxiv.org/abs/2604.26947v1",
+        "authors": [
+          "Jared Benson",
+          "C. E. Sturner"
+        ],
+        "abstract": "Orbital energy splittings are important quantum dot parameters for the operation of hole spin qubits. They are known to depend on the lateral confinement of the quantum dots. However, when changing top, plunger gate voltages, which are the typical control parameter for qubit applications, such energ"
+      },
+      {
+        "title": "Learning Over-Relaxation Policies for ADMM with Convergence Guarantees",
+        "url": "http://arxiv.org/abs/2604.26932v1",
+        "authors": [
+          "Junan Lin",
+          "Paul J. Goulart"
+        ],
+        "abstract": "The Alternating Direction Method of Multipliers (ADMM) is a widely used method for structured convex optimization, and its practical performance depends strongly on the choice of penalty and relaxation parameters. Motivated by settings such as Model Predictive Control (MPC), where one repeatedly sol"
+      },
+      {
+        "title": "Exact Dynamic Programming for Solow--Polasky Diversity Subset Selection on Lines and Staircases",
+        "url": "http://arxiv.org/abs/2604.26929v1",
+        "authors": [
+          "Michael T. M. Emmerich"
+        ],
+        "abstract": "We study exact fixed-cardinality Solow--Polasky diversity subset selection on ordered finite $\\ell_1$ sets, with monotone biobjective Pareto fronts and their higher-dimensional staircase analogues as central applications. Solow--Polasky diversity was introduced in biodiversity conservation, whereas "
+      }
+    ]
+  },
+  {
     "date": "2026-04-29",
     "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight accelerating progress across robot dexterity, learning, and reliability. **Sony's ace robot** defeating professional table tennis players demonstrates remarkable real-world physical precision, while **Chinese humanoid robots** targeting household tasks signal commercial embodied AI momentum.\n\nOn the research front, **KinDER** introduces a physical reasoning benchmark advancing robot planning capabilities, and **variational neural belief parameterizations** improve dexterous grasping under real-world uncertainty—critical for manipulation tasks. **TSN-Affinity** addresses continual offline reinforcement learning through parameter reuse, enabling robots to adapt across tasks without catastrophic forgetting. **Scenario-based system testing** frameworks strengthen reliability for distributed robotics deployments.\n\nTogether, these trends underscore a field rapidly bridging **sim-to-real gaps**, improving **adaptive learning**, and pushing robots toward genuine household and industrial utility.",
     "videos": [
