@@ -1,5 +1,127 @@
 [
   {
+    "date": "2026-05-01",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent developments highlight a surge in **humanoid and multi-legged robotics** for real-world applications, with Chinese humanoid robots targeting household tasks and Unitree's G1 demonstrating dynamic locomotion like skating. Sony's Ace robot defeating professional table tennis players underscores rapid advances in **dexterous manipulation and reactive control**.\n\nOn the research front, key themes include **physics-aware learning**: LaST-R1 enhances vision-language-action models through adaptive physical reasoning, while PhyCo integrates controllable physical priors for motion generation. **Tactile sensing** (FlexiTac) and **deformable object dynamics** (RopeDreamer) address manipulation challenges. OmniRobotHome advances **multi-modal human-robot interaction**, and open-source platforms (ESP32 hexapod, FlexiTac) democratize robotics development. Notably, \"Exploration Hacking\" raises important concerns about **LLM robustness within RL training pipelines**.",
+    "videos": [
+      {
+        "title": "This New Chinese Humanoid Robot Wants to Do Your Household Chores",
+        "url": "https://youtube.com/watch?v=JpeuQS40CHw",
+        "channel": "Rafa Goes Around!",
+        "views": 44312,
+        "priority": 1
+      },
+      {
+        "title": "The Pivot to Robots Has Already Begun | What The Future",
+        "url": "https://youtube.com/watch?v=zw9LAjm9pso",
+        "channel": "CNET",
+        "views": 13618,
+        "priority": 1
+      },
+      {
+        "title": "Open Source ESP32 8-Servo Hexapod Robot",
+        "url": "https://youtube.com/watch?v=aGaYgAD-EhY",
+        "channel": "James Bruton",
+        "views": 39655,
+        "priority": 1
+      },
+      {
+        "title": "Unitree&#39;s New G1 Robot Just Learned to Skate Like a Human… This Is NOT CGI",
+        "url": "https://youtube.com/watch?v=BemO2Wz7KZo",
+        "channel": "NextGen Humanoids",
+        "views": 16727,
+        "priority": 1
+      },
+      {
+        "title": "Build the TINIEST ESP32 Drone (Now a Kit) | ESP-FLY Tutorial",
+        "url": "https://youtube.com/watch?v=3Y_drsQtMs4",
+        "channel": "Max Imagination",
+        "views": 8671,
+        "priority": 1
+      },
+      {
+        "title": "Sony’s Ace Robot Beats Top Table Tennis Pros in Real Matches",
+        "url": "https://youtube.com/watch?v=VVEzgYxDdrc",
+        "channel": "Global Update",
+        "views": 63979,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "OmniRobotHome: A Multi-Camera Platform for Real-Time Multiadic Human-Robot Interaction",
+        "url": "http://arxiv.org/abs/2604.28197v1",
+        "authors": [
+          "Junyoung Lee",
+          "Sookwan Han"
+        ],
+        "abstract": "Human-robot collaboration has been studied primarily in dyadic or sequential settings. However, real homes require multiadic collaboration, where multiple humans and robots share a workspace, acting concurrently on interleaved subtasks with tight spatial and temporal coupling. This regime remains un"
+      },
+      {
+        "title": "LaST-R1: Reinforcing Action via Adaptive Physical Latent Reasoning for VLA Models",
+        "url": "http://arxiv.org/abs/2604.28192v1",
+        "authors": [
+          "Hao Chen",
+          "Jiaming Liu"
+        ],
+        "abstract": "Vision-Language-Action (VLA) models have increasingly incorporated reasoning mechanisms for complex robotic manipulation. However, existing approaches share a critical limitation: whether employing explicit linguistic reasoning that suffers from latency and discretization, or utilizing more expressi"
+      },
+      {
+        "title": "RopeDreamer: A Kinematic Recurrent State Space Model for Dynamics of Flexible Deformable Linear Objects",
+        "url": "http://arxiv.org/abs/2604.28161v1",
+        "authors": [
+          "Tim Missal",
+          "Lucas Domingues"
+        ],
+        "abstract": "The robotic manipulation of Deformable Linear Objects (DLOs) is a fundamental challenge due to the high-dimensional, non-linear dynamics of flexible structures and the complexity of maintaining topological integrity during contact-rich tasks. While recent data-driven methods have utilized Recurrent "
+      },
+      {
+        "title": "FlexiTac: A Low-Cost, Open-Source, Scalable Tactile Sensing Solution for Robotic Systems",
+        "url": "http://arxiv.org/abs/2604.28156v1",
+        "authors": [
+          "Binghao Huang",
+          "Yunzhu Li"
+        ],
+        "abstract": "We present FlexiTac, a low-cost, open-source, and scalable piezoresistive tactile sensing solution designed for robotic end-effectors. FlexiTac is a practical \"plug-in\" module consisting of (i) thin, flexible tactile sensor pads that provide dense tactile signals and (ii) a compact multi-channel rea"
+      },
+      {
+        "title": "Exploration Hacking: Can LLMs Learn to Resist RL Training?",
+        "url": "http://arxiv.org/abs/2604.28182v1",
+        "authors": [
+          "Eyon Jang",
+          "Damon Falck"
+        ],
+        "abstract": "Reinforcement learning (RL) has become essential to the post-training of large language models (LLMs) for reasoning, agentic capabilities and alignment. Successful RL relies on sufficient exploration of diverse actions by the model during training, which creates a potential failure mode: a model cou"
+      },
+      {
+        "title": "AEGIS: A Holistic Benchmark for Evaluating Forensic Analysis of AI-Generated Academic Images",
+        "url": "http://arxiv.org/abs/2604.28177v1",
+        "authors": [
+          "Bo Zhang",
+          "Tzu-Yen Ma"
+        ],
+        "abstract": "We introduce AEGIS, A holistic benchmark for Evaluating forensic analysis of AI-Generated academic ImageS. Compared to existing benchmarks, AEGIS features three key advances: (1) Domain-Specific Complexity: covering seven academic categories with 39 fine-grained subtypes, exposing intrinsic forensic"
+      },
+      {
+        "title": "Uniaxial strain-driven ferroelastic domain control in LaAlO3",
+        "url": "http://arxiv.org/abs/2604.28183v1",
+        "authors": [
+          "Matthias Roeper",
+          "Robin Buschbeck"
+        ],
+        "abstract": "Multiferroic domain walls in functional oxides exhibit properties distinct from the bulk and are increasingly exploited as active elements in nanoelectronic and photonic devices. Deterministic control of domain populations has typically remained limited to local control, or removal with temperature."
+      },
+      {
+        "title": "PhyCo: Learning Controllable Physical Priors for Generative Motion",
+        "url": "http://arxiv.org/abs/2604.28169v1",
+        "authors": [
+          "Sriram Narayanan",
+          "Ziyu Jiang"
+        ],
+        "abstract": "Modern video diffusion models excel at appearance synthesis but still struggle with physical consistency: objects drift, collisions lack realistic rebound, and material responses seldom match their underlying properties. We present PhyCo, a framework that introduces continuous, interpretable, and ph"
+      }
+    ]
+  },
+  {
     "date": "2026-04-30",
     "summary": "# Key Trends in Quadruped & Embodied AI Research\n\nRecent developments highlight rapid advances across **humanoid dexterity**, **legged locomotion**, and **robot perception**. Chinese humanoid robots are targeting household tasks, while Unitree's G1 demonstrates agile skating locomotion, and Sony's Ace achieves superhuman table tennis performance — underscoring real-world deployment maturity.\n\nOn the research side, **bi-level optimization** for rope-assisted legged robots addresses complex contact planning, while **NeRF-based safe navigation** via reachable sets improves environmental awareness. The **STARRY** framework advances robotic manipulation through spatial-temporal world modeling, and **World2VLM** enhances dynamic spatial reasoning by distilling world model imagination into vision-language models. Novel **origami-inspired grippers** offer universal grasping solutions.\n\nTogether, these trends emphasize closing the gap between simulation-trained policies and robust, adaptive real-world robot deployment.",
     "videos": [
