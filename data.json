@@ -1,5 +1,92 @@
 [
   {
+    "date": "2026-05-04",
+    "summary": "# Key Trends in Quadruped Robotics & Embodied AI\n\nRecent work highlights several converging trends in robotics and embodied AI. **Open-source accessible hardware** remains vibrant, exemplified by James Bruton's ESP32 hexapod demonstrating low-cost, multi-servo locomotion. In perception, **high-speed vision** significantly boosts zero-shot action understanding, while stereo spatial attention enables robust real-time mobile manipulation under visual disturbances.\n\n**Vision-language reasoning** advances through interleaved text-image traces for long-horizon manipulation tasks. Notably, **fleet-scale reinforcement learning** enables generalist robot policies to improve continuously during real-world deployment. Complementary developments in **mixed reality haptics** leverage generative AI for adaptive physical interaction.\n\nBroader AI concerns include privacy risks in medical RAG chatbots, adversarial synthetic data challenges, and questions about coding agents' scientific reproducibility.",
+    "videos": [
+      {
+        "title": "Open Source ESP32 8-Servo Hexapod Robot",
+        "url": "https://youtube.com/watch?v=aGaYgAD-EhY",
+        "channel": "James Bruton",
+        "views": 41775,
+        "priority": 1
+      }
+    ],
+    "papers": [
+      {
+        "title": "High-Speed Vision Improves Zero-Shot Semantic Understanding of Human Actions",
+        "url": "http://arxiv.org/abs/2605.00496v1",
+        "authors": [
+          "Yongpeng Cao",
+          "Yuji Yamakawa"
+        ],
+        "abstract": "Understanding human actions from visual observations is essential for human--robot interaction, particularly when semantic interpretation of unfamiliar or hard-to-annotate actions is required. In scenarios such as rapid and less common activities, collecting sufficient labeled data for supervised le"
+      },
+      {
+        "title": "Stereo Multistage Spatial Attention for Real-Time Mobile Manipulation Under Visual Scale Variation and Disturbances",
+        "url": "http://arxiv.org/abs/2605.00471v1",
+        "authors": [
+          "Xianbo Cai",
+          "Hideyuki Ichiwara"
+        ],
+        "abstract": "Robots operating in open, unstructured real-world environments must rely on onboard visual perception while autonomously moving across different locations. Continuous changes in onboard camera viewpoints cause significant visual scale variations in target objects, affecting vision-based motion gener"
+      },
+      {
+        "title": "Thinking in Text and Images: Interleaved Vision--Language Reasoning Traces for Long-Horizon Robot Manipulation",
+        "url": "http://arxiv.org/abs/2605.00438v1",
+        "authors": [
+          "Jinkun Liu",
+          "Haohan Chi"
+        ],
+        "abstract": "Long-horizon robotic manipulation requires plans that are both logically coherent and geometrically grounded. Existing Vision-Language-Action policies usually hide planning in latent states or expose only one modality: text-only chain-of-thought encodes causal order but misses spatial constraints, w"
+      },
+      {
+        "title": "Learning while Deploying: Fleet-Scale Reinforcement Learning for Generalist Robot Policies",
+        "url": "http://arxiv.org/abs/2605.00416v1",
+        "authors": [
+          "Yi Wang",
+          "Xinchen Li"
+        ],
+        "abstract": "Generalist robot policies increasingly benefit from large-scale pretraining, but offline data alone is insufficient for robust real-world deployment. Deployed robots encounter distribution shifts, long-tail failures, task variations, and human correction opportunities that fixed demonstration datase"
+      },
+      {
+        "title": "Prop-Chromeleon: Adaptive Haptic Props in Mixed Reality through Generative Artificial Intelligence",
+        "url": "http://arxiv.org/abs/2605.00804v1",
+        "authors": [
+          "Haoyu Wang",
+          "Fengyuan Zhu"
+        ],
+        "abstract": "Mixed Reality (MR) aims to blend digital and physical worlds, but the absence of haptic feedback often breaks visual-tactile consistency. We introduce Prop-Chromeleon, a MR system based on generative artificial intelligence (AI) that dynamically transforms everyday objects into adaptive passive hapt"
+      },
+      {
+        "title": "Can Coding Agents Reproduce Findings in Computational Materials Science?",
+        "url": "http://arxiv.org/abs/2605.00803v1",
+        "authors": [
+          "Ziyang Huang",
+          "Yi Cao"
+        ],
+        "abstract": "Large language models are increasingly deployed as autonomous coding agents and have achieved remarkably strong performance on software engineering benchmarks. However, it is unclear whether such success transfers to computational scientific workflows, where tasks require not only strong coding abil"
+      },
+      {
+        "title": "When RAG Chatbots Expose Their Backend: An Anonymized Case Study of Privacy and Security Risks in Patient-Facing Medical AI",
+        "url": "http://arxiv.org/abs/2605.00796v1",
+        "authors": [
+          "Alfredo Madrid-García",
+          "Miguel Rujas"
+        ],
+        "abstract": "Background: Patient-facing medical chatbots based on retrieval-augmented generation (RAG) are increasingly promoted to deliver accessible, grounded health information. AI-assisted development lowers the barrier to building them, but they still demand rigorous security, privacy, and governance contro"
+      },
+      {
+        "title": "Repurposing Image Diffusion Models for Adversarial Synthetic Structured Data: A Case Study of Ground Truth Drift",
+        "url": "http://arxiv.org/abs/2605.00788v1",
+        "authors": [
+          "Adam Arthur",
+          "Christopher Schwartz"
+        ],
+        "abstract": "Public image diffusion models are now powerful enough that an attacker without the resources to train a tabular-specific generator may repurpose one off the shelf. This study tests that possibility directly. An unmodified Stable Diffusion U-Net is applied to the UCI Adult Income dataset by reshaping"
+      }
+    ]
+  },
+  {
     "date": "2026-05-03",
     "summary": "# Quadruped & Embodied AI Research Trends: Recent Highlights\n\nRobotics research is accelerating across hardware and intelligence fronts. Marathon world-record achievements and China's scaled robot deployments signal rapid real-world deployment maturity. Open-source platforms like the ESP32 hexapod and **FlexiTac** tactile sensors democratize accessible robot development.\n\nOn the AI side, **LaST-R1** advances vision-language-action models through adaptive physical reasoning, while **PhyCo** improves physically-grounded motion generation. **OmniRobotHome** introduces multi-camera frameworks for real-time human-robot interaction, and **RopeDreamer** tackles flexible object manipulation dynamics—critical for dexterous tasks.\n\nNotably, **Exploration Hacking** raises safety concerns about LLMs resisting RL training, highlighting alignment challenges in learned robot policies.\n\nTogether, these trends point toward **physically-aware, accessible, and safety-conscious** embodied AI systems scaling toward real-world deployment.",
     "videos": [
